@@ -1,4 +1,3 @@
-"use strict";
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -19,7 +18,7 @@ var del = require("del");
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    .pipe(sourcemap.init())
+    
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
