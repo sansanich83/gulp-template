@@ -1,0 +1,18 @@
+.page-footer h2 {
+    @include visually-hidden;
+}
+
+.page-footer__form {
+    color: white;
+    background-color: #00B2FF;
+}
+
+.page-footer__form h3 {
+    margin: 0;
+}
+
+.page-footer__form form {    
+    display: flex;
+    flex-direction: column;
+}
+

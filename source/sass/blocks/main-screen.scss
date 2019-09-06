@@ -1,25 +1,102 @@
 .main-screen {
     background-color: black;
-    background-image: url(/img/main-bg-mobile.png);
-    background-position-x: -624px ;
-    background-position-y: -187px;
+    background-image: 
+    url(/img/main-bg2-mobile.png),
+    url(/img/main-bg-mobile.png);
+    background-position-x: right, -624px ;
+    background-position-y: 92px, -187px;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 647px;
     margin-top: -55px;
+    color: #ffffff;
 }
 
+.main-screen h1 {    
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Roboto Condensed, sans-serif;
+    margin-top: 0;
+    margin-left: 4vw;
+    padding-top: 284px;
+}
+
+.main-screen a {
+    display: none;
+}
+
+.main-screen p {
+    width: 70%;
+    margin-left: 24vw;
+
+    &::before {
+        content: "";
+        display: block;
+        position: relative;
+        left: -60px;
+        top: 20px;
+        width: 40px;
+        height: 0;
+        border-top: 1px solid white;
+    }
+}
+
+.main-screen button {
+    color: white;
+    background-color: #00B2FF;
+    border: none;
+    border-radius: 4px;
+    width: 90%;
+    min-height: 55px;
+    margin: 45px 5%;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
 
 @media (min-width: 750px) {
 
     .main-screen {
-        background-position-x: -372px ;
-        min-height: 669x;
+        background-image: 
+        url(/img/main-bg2-tablet.png),
+        url(/img/main-bg-tablet.png);
+        background-position-x: 65vw, -372px ;
+        background-position-y: 112px, -187px;
+        min-height: 686x;
         margin-top: -72px;
+    }
+
+    .main-screen h1 {  
+        width: 470px;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: 0.07em;
+        margin-left: 11vw;
+        padding-top: 200px;
+    }
+
+    .main-screen p {
+        width: 356px;
+        font-size: 18px;
+        line-height: 156.8%;
+        margin-left: 18vw;
+    }
+
+    .main-screen button {
+        margin-left: 18vw;
+        margin-top: 0;
+        width: 379px;
+        min-height: 55px;
     }
 }
 
-@media (min-width: 1075px) {
+@media (min-width: 1024px) {
 
     .main-screen {       
         background-image: url(/img/main-bg-desktop.png);

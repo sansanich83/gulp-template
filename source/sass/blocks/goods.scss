@@ -1,0 +1,32 @@
+.goods {
+    background-color: #1B2D37;
+    color: white;
+}
+
+.goods a {
+    color: white;
+    display: block;
+    width: 90%;
+    min-height: 256px;
+        
+}
+
+.goods {
+
+    & a:nth-child(2) {
+        background-image: url(/img/produce-mobile.png);
+        background-repeat: no-repeat;
+    }
+
+    & a:nth-child(3) {
+        background-image: url(/img/mount-mobile.png);
+        background-repeat: no-repeat;
+    }
+    
+
+    & a:nth-child(4) {
+        background-image: url(/img/light-mobile.png);
+        background-repeat: no-repeat;
+    }
+    
+}

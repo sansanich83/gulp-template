@@ -12,11 +12,10 @@
 <body>
 
   <header class="page-header">
-    <h1>Smart device</h1>
     <div class="logotype">
       <a href="index.html">
         <picture>
-          <source media="(min-width: 400px)" srcset="./img/logo-tablet.svg" />
+          <source media="(min-width: 500px)" srcset="./img/logo-tablet.svg" />
           <img src="./img/logo-mobile.svg" width="38" height="38" alt="умный девайс" />
         </picture>
       </a>
@@ -34,30 +33,32 @@
     </div>
   </header>
 
-  <main class="main-screen">
-
-
-  </main>
+  <section class="main-screen">
+    <h1>Печатные платы</h1>
+    <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+    <button>Бесплатная консультация</button>
+    <a href="#">скрол вниз</a>
+  </section>
 
   <section class="advantages">
-    <h2 class="visually-hidden">Преимущества</h2>
-    <div>
+    <h2>Преимущества</h2>
+    <div class="advantages__item">
       <h3>Оперативные сроки</h3>
       <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
         производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
     </div>
-    <div>
+    <div class="advantages__item">
       <h3>Крупные поставщики</h3>
       <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
         HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
       </p>
     </div>
-    <div>
+    <div class="advantages__item">
       <h3>Полная конфиденциальность</h3>
       <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
       </p>
     </div>
-    <div>
+    <div class="advantages__item">
       <h3>Персонализация стоимости</h3>
       <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
       </p>
@@ -79,18 +80,16 @@
 
   <section class="goods">
     <h2>Service Device предлагает следующие товары и услуги </h2>
-    <div>
+    <a href="#">
       <span>Производство печатных плат</span>
-      <a href="#">></a>
-    </div>
-    <div>
+    </a>
+    <a href="#">
       <span>Монтаж печатных плат</span>
-      <a href="#">></a>
-    </div>
-    <div>
+    </a>
+    <a href="#">
       <span>Комплектующие для светотехники</span>
-      <a href="#">></a>
-    </div>
+    </a>
+
   </section>
 
 
@@ -106,19 +105,23 @@
         <input type="phone" placeholder="Телефон">
         <textarea placeholder="Ваш вопрос"></textarea>
         <button>Задать вопрос</button>
-        <input type="checkbox">
+        <div class="page-footer__form-agreement">
+          <input type="checkbox" id="#agreement">
+          <label for="#agreement">Я согласен на обработку персональных данных</label>
+        </div>
       </form>
     </div>
+    
     <div class="contacts">
 
       <div>
         <img src="./img/logo-footer.svg" alt="Логотип компании">
         <span>1999-2018 SD Service Devices</span>
-        <div>
-          <a href="facebook.com"><img src="./img/fb-icon.svg" alt="значок фэйсбук"></a>
-          <a href="facebook.com"><img src="./img/ok-icon.svg" alt="значок одноклассники"></a>
-          <a href="facebook.com"><img src="./img/vk-icon.svg" alt="значок вконтакте"></a>
-        </div>
+        <ul class="contacts__social">
+          <li><a href="facebook.com"><img src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
+          <li><a href="facebook.com"><img src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
+          <li><a href="facebook.com"><img src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
+        </ul>
       </div>
 
       <div class="contacts__section">
@@ -126,12 +129,22 @@
         <button><img src="./img/plus-icon.svg" alt="раскрыть разделы сайта"></button>
       </div>
 
+      <ul class="contacts__links">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Продукты</a></li>
+        <li><a href="#">Производство печатных плат</a></li>
+        <li><a href="#">Монтаж печатных плат</a></li>
+        <li><a href="#">Комплектующие</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
       <div class="contacts__section">
         <h3 class="contacts__title">Наш офис</h3>
         <button><img src="./img/minus-icon.svg" alt="раскрыть адрес офиса"></button>
       </div>
 
-      <div>
+      <div class="contacts__adress">
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
         <p>+7 (495) 589-40-50</p>
         <p>+7 (925) 003-87-67</p>
