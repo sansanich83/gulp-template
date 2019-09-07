@@ -1,32 +1,134 @@
 .goods {
     background-color: #1B2D37;
     color: white;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }
 
 .goods a {
     color: white;
     display: block;
+    box-sizing: border-box;
     width: 90%;
+    max-width: 720px;
     min-height: 256px;
-        
+    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    &:hover {
+        border: 1px solid #00B2FF;
+    }
+}
+
+.goods span {
+    font-family: Roboto Condensed,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    width: 157px;
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 25px;
+  
+}
+
+.goods h2 {
+    font-family: Roboto Condensed, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140.62%;
+    padding-top: 40px;
+    padding-left: 15px;
 }
 
 .goods {
 
     & a:nth-child(2) {
-        background-image: url(/img/produce-mobile.png);
+        background-image:
+        url(/img/arrow.png), 
+        url(/img/produce-tablet.png);
         background-repeat: no-repeat;
+        background-position-x: right, center;
+        background-position-y: bottom, center;
     }
 
     & a:nth-child(3) {
-        background-image: url(/img/mount-mobile.png);
+        background-image: 
+        url(/img/arrow.png),
+        url(/img/mount-tablet.png);
         background-repeat: no-repeat;
+        background-position-x: right, center;
+        background-position-y: bottom, center;
     }
     
 
     & a:nth-child(4) {
-        background-image: url(/img/light-mobile.png);
+        background-image: 
+        url(/img/arrow.png),
+        url(/img/light-tablet.png);
         background-repeat: no-repeat;
+        background-position-x: right, center;
+        background-position-y: bottom, center;
     }
     
+}
+
+@media (min-width: 1024px) {
+    
+    .goods {
+
+        display:flex;
+        flex-wrap: wrap;
+
+        & a:nth-child(2) {
+            background-image:
+            url(/img/arrow.png), 
+            url(/img/produce-desktop.png);
+            background-repeat: no-repeat;
+            background-position-x: right, center;
+            background-position-y: bottom, center;
+            margin-right: 25px;
+        }
+    
+        & a:nth-child(3) {
+            background-image: 
+            url(/img/arrow.png),
+            url(/img/mount-desktop.png);
+            background-repeat: no-repeat;
+            background-position-x: right, center;
+            background-position-y: bottom, center;
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+        
+    
+        & a:nth-child(4) {
+            background-image: 
+            url(/img/arrow.png),
+            url(/img/light-desktop.png);
+            background-repeat: no-repeat;
+            background-position-x: right, center;
+            background-position-y: bottom, center;
+            margin-left: 25px;
+        }
+        
+    }
+
+    .goods h2 {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .goods a {
+        color: white;
+        display: block;
+        box-sizing: border-box;
+        width: 30%;
+        max-width: 370px;
+        min-height: 620px;
+        
+    }
 }

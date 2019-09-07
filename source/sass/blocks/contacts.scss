@@ -1,58 +1,57 @@
-.contacts {
-    
-    & div:nth-child(1) {
-        display: flex;
-        flex-direction: column;
-        min-height: 262px;
-        border-bottom: 1px solid #CDCDCD;
-        
-        & img {
-            margin-top: 45px;  
-        }
+.contacts__logo {
+    display: flex;
+    flex-direction: column;
+    min-height: 262px;
 
-        & span {
-            margin-top: 26px;
-            text-align: center;
-            font-size: 13px;
-            line-height: 24px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: #1B2D37;
-            opacity: 0.5;
-            font-family: PT Mono, sans-serif;
-        }
-
-        & div {
-            flex-direction: row;
-            margin: 0 auto;
-
-            & a {
-                margin: 0 10px;
-            }
-        }
-    }
-    & div:nth-child(2) {
-        display: flex;
-        border-bottom: 1px solid #CDCDCD;       
+    & img {
+        margin-top: 45px;  
     }
 
-    & div:nth-child(4) {
-        display: flex;        
-    }
-
-    & div:nth-child(5),div:nth-child(6) {
-        border-bottom: 1px solid #CDCDCD;
-        & p {
-            color: #1B2D37;
-            opacity: 0.5;
-            margin-left: 15px;
-            font-size: 15px;
-            line-height: 25px;
-        }
+    & span {
+        margin-top: 26px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #1B2D37;
+        opacity: 0.5;
+        font-family: PT Mono, sans-serif;
     }
 }
 
+.contacts__section, .contacts__copyright {
+    border-top: 1px solid #CDCDCD;
+    width: 100%;
+}
 
+.contacts__section > div {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.contacts__section div:first-child {
+    width: 290px;
+    margin: 0 auto;
+}
+
+.contacts__adress div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin: 0 auto;
+    font-family: PT Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1B2D37;
+    opacity: 0.5;
+}
+
+.contacts__links ul {
+        display: none;
+}
 
 .contacts__title {
     font-family: Roboto Condensed, sans-serif;
@@ -71,10 +70,6 @@
     margin-right: 4.6vw;
 }
 
-.contacts__links {
-    display: none;
-}
-
 .contacts__social {
     display: flex;
     padding: 0;
@@ -86,59 +81,65 @@
     }
 }
 
+.contacts__copyright {
+    font-family: PT Mono, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1B2D37;
+    opacity: 0.5;
+}
+
 @media (min-width: 750px) {
+    .contacts__logo {
+        flex-direction: row;
 
-    .contacts {
-    
-        & div:nth-child(1) {    
-            display: flex;
-            flex-direction: row;
-            min-height: 98px;
-
-            & img {
-                margin-top: 0;
-                margin-left: 5%; 
-            }
-
-            & span {
-                margin-left: 5%;
-            }
-
-            & div {
-                margin-top: 20px;
-            }
+        & > img {
+            margin: 20px;
+            width: 217px;
+            height: 52px;
         }
+
+        & ul {
+            margin-top: -20px;
+        }
+    }
+
+    .contacts__section-wrapper {
+        display: flex;
     }
 
     .contacts__section button {
         display: none;
     }
 
-    .contacts__section {
+    .contacts__links ul {
         display: flex;
         flex-direction: column;
     }
 
-    .contacts__links {
-        display: inline-block;
-    }
-
-        .contacts__section a {
-        color: #1B2D37;
-        opacity: 0.5;
+    .contacts__links a {
+        text-decoration: none;
+        font-family: PT Mono, sans-serif;
+        font-style: normal;
+        font-weight: normal;
         font-size: 15px;
         line-height: 25px;
+        color: #1B2D37;
+        opacity: 0.5;
     }
 
-    .contacts {
+    .contacts__copyright {
+        display: flex;
+        flex-direction: row;
 
-        & div:nth-child(2) {            
-            border-bottom: none;       
+        & p {
+            margin: 20px;
         }
-
-        & div:nth-child(2) {            
-            border-bottom: none;       
-        }
-
     }
+    
 }

@@ -41,27 +41,30 @@
   </section>
 
   <section class="advantages">
-    <h2>Преимущества</h2>
-    <div class="advantages__item">
-      <h3>Оперативные сроки</h3>
-      <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
-        производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-    </div>
-    <div class="advantages__item">
-      <h3>Крупные поставщики</h3>
-      <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
-        HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
-      </p>
-    </div>
-    <div class="advantages__item">
-      <h3>Полная конфиденциальность</h3>
-      <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
-      </p>
-    </div>
-    <div class="advantages__item">
-      <h3>Персонализация стоимости</h3>
-      <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
-      </p>
+    <div>
+      <h2>Преимущества</h2>
+      <div class="advantages__item">
+        <h3>Оперативные сроки</h3>
+        <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
+          производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+      </div>
+      <div class="advantages__item">
+        <h3>Крупные поставщики</h3>
+        <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
+          HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3>Полная конфиденциальность</h3>
+        <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3>Персонализация стоимости</h3>
+        <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+          устраивает.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -95,26 +98,29 @@
 
   <footer class="page-footer">
     <h2>Обратная связь</h2>
+
     <div class="page-footer__form">
-      <h3>Остались вопросы? <br>
-        Задайте их нам!
-      </h3>
-      <p>Мы проконсультируем Вас бесплатно</p>
-      <form action="">
-        <input type="text" placeholder="Имя">
-        <input type="phone" placeholder="Телефон">
-        <textarea placeholder="Ваш вопрос"></textarea>
-        <button>Задать вопрос</button>
-        <div class="page-footer__form-agreement">
-          <input type="checkbox" id="#agreement">
-          <label for="#agreement">Я согласен на обработку персональных данных</label>
-        </div>
-      </form>
+      <div class="page-footer__form-wrapper">
+        <h3>Остались вопросы? <br>
+          Задайте их нам!
+        </h3>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form action="">
+          <input type="text" placeholder="Имя">
+          <input type="phone" placeholder="Телефон">
+          <textarea placeholder="Ваш вопрос"></textarea>
+          <button>Задать вопрос</button>
+          <div class="page-footer__form-agreement">
+            <input checked type="checkbox" id="#agreement">
+            <label class="page-footer__label" for="#agreement">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+      </div>
     </div>
-    
+
     <div class="contacts">
 
-      <div>
+      <div class="contacts__logo">
         <img src="./img/logo-footer.svg" alt="Логотип компании">
         <span>1999-2018 SD Service Devices</span>
         <ul class="contacts__social">
@@ -124,35 +130,38 @@
         </ul>
       </div>
 
-      <div class="contacts__section">
-        <h3 class="contacts__title">Разделы сайта</h3>
-        <button><img src="./img/plus-icon.svg" alt="раскрыть разделы сайта"></button>
+      <div class="contacts__section-wrapper">
+        <div class="contacts__section contacts__links">
+          <div>
+            <h3 class="contacts__title">Разделы сайта</h3>
+            <button><img src="./img/plus-icon.svg" alt="раскрыть разделы сайта"></button>
+          </div>
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Продукты</a></li>
+            <li><a href="#">Производство печатных плат</a></li>
+            <li><a href="#">Монтаж печатных плат</a></li>
+            <li><a href="#">Комплектующие</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="contacts__section contacts__adress">
+          <div>
+            <h3 class="contacts__title">Наш офис</h3>
+            <button><img src="./img/minus-icon.svg" alt="раскрыть адрес офиса"></button>
+          </div>
+          <div>
+            <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            <p>+7 (495) 589-40-50</p>
+            <p>+7 (925) 003-87-67</p>
+            <p>+7 (926) 926-080-79</p>
+          </div>
+        </div>
       </div>
 
-      <ul class="contacts__links">
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Продукты</a></li>
-        <li><a href="#">Производство печатных плат</a></li>
-        <li><a href="#">Монтаж печатных плат</a></li>
-        <li><a href="#">Комплектующие</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-
-      <div class="contacts__section">
-        <h3 class="contacts__title">Наш офис</h3>
-        <button><img src="./img/minus-icon.svg" alt="раскрыть адрес офиса"></button>
-      </div>
-
-      <div class="contacts__adress">
-        <p>г. Мытищи, Олимпийский проспект, д.10</p>
-        <p>+7 (495) 589-40-50</p>
-        <p>+7 (925) 003-87-67</p>
-        <p>+7 (926) 926-080-79</p>
-      </div>
-
-
-      <div>
+      <div class="contacts__copyright">
         <p>Условия конфеденциальности</p>
         <p>Developed by wow studio</p>
       </div>
