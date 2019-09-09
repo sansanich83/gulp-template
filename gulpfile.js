@@ -18,7 +18,6 @@ var del = require("del");
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
