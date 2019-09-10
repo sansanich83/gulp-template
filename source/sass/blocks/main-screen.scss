@@ -30,15 +30,21 @@
 
 .main-screen__slogan {
   width: 70%;
-  margin-left: 24vw;
+  margin-left: 21vw;
+  font-family: "PT Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 156.8%;
+  color: #ffffff;
 
   &::before {
     content: "";
     display: block;
     position: relative;
-    left: -60px;
-    top: 20px;
-    width: 40px;
+    left: -50px;
+    top: 19px;
+    width: 32px;
     height: 0;
     border-top: 1px solid white;
   }
@@ -51,13 +57,17 @@
   border-radius: 4px;
   width: 90%;
   min-height: 55px;
-  margin: 45px 5%;
+  margin: 29px 5%;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.main-screen__button-desktop {
+  display: none;
 }
 
 @media (min-width: 750px) {
@@ -77,7 +87,8 @@
     line-height: 70px;
     letter-spacing: 0.07em;
     margin-left: 11vw;
-    padding-top: 200px;
+    padding-top: 205px;
+    margin-bottom: 28px;
   }
 
   .main-screen__slogan {
@@ -85,6 +96,8 @@
     font-size: 18px;
     line-height: 156.8%;
     margin-left: 18vw;
+    margin-top: 10px;
+    margin-bottom: 55px;
   }
 
   .main-screen button {
@@ -93,20 +106,78 @@
     width: 379px;
     min-height: 55px;
   }
+
+  .main-screen__button-desktop {
+    display: inline-block;
+  }
+
+  .main-screen__button-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
   .main-screen {
-    background-image: url("/img/main-bg-desktop.png");
-    background-position-x: 0;
-    background-position-y: -70px;
+    background-image:
+      url("/img/main-bg2-desktop.png"),
+      url("/img/main-bg-desktop.png");
+    background-position-x: 65vw, 0;
+    background-position-y: 112px, -69px;
     min-height: 878px;
     margin-top: -85px;
+  }
+
+  .main-screen__title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 718px;
+    padding-top: 300px;
+  }
+
+  .main-screen__slogan {
+    font-family: "PT Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    width: 683px;
+  }
+
+  .main-screen__button {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .main-screen__scroll {
+    display: block;
+    color: #ffffff;
+    font-family: "PT Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 4vw;
+    transform: rotate(-90deg);
+    width: 93px;
+    height: 16px;
+    opacity: 0.5;
   }
 }
 
 @media (min-width: 1920px) {
   .main-screen {
-    background-size: cover;
+    background-size: auto, cover;
   }
 }

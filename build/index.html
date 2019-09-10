@@ -22,8 +22,8 @@
     </div>
     <div class="header__controls">
       <nav class="header__nav-menu">
-        <span></span>
-        <span></span>
+        <span class="header__nav-menu-span"></span>
+        <span class="header__nav-menu-span"></span>
       </nav>
       <a class="header__email header__connect-type" href="mailto:someone@yoursite.com"> <img src="./img/envelope.svg" alt="написать емэйл">
         <span class="header__controls-info">info@sd.ru</span>
@@ -38,7 +38,7 @@
   <section class="main-screen">
     <h1 class="main-screen__title">Печатные платы</h1>
     <p class="main-screen__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-    <button class="main-screen__button">Бесплатная консультация</button>
+    <button class="main-screen__button"><span class="main-screen__button-desktop">Получить бесплатную консультацию</span> <span class="main-screen__button-mobile">Бесплатная консультация</span></button>
     <a class="main-screen__scroll" href="#">скрол вниз</a>
   </section>
 
@@ -63,7 +63,8 @@
       </div>
       <div class="advantages__item">
         <h3 class="advantages__title">Персонализация стоимости</h3>
-        <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+        <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
+          цену, которая Вас
           устраивает.
         </p>
       </div>
@@ -111,7 +112,7 @@
           <input class="footer__form-field footer__form-field--input" type="text" placeholder="Имя">
           <input class="footer__form-field footer__form-field--input" type="phone" placeholder="Телефон">
           <textarea class="footer__form-field footer__form-field--textarea" placeholder="Ваш вопрос"></textarea>
-          <button class="footer__form-button">Задать вопрос</button>
+          <button type="submit" class="footer__form-button">Задать вопрос</button>
           <div class="footer__form-agreement">
             <input class="footer__form-agreement-input" checked="" type="checkbox" id="#agreement">
             <label class="footer__form-label" for="#agreement">Я согласен на обработку персональных данных</label>
@@ -121,56 +122,60 @@
     </div>
 
     <div class="footer__contacts contacts">
+      <div class="contacts__wrapper">
 
       <div class="contacts__logo">
-        <img src="./img/logo-footer.svg" alt="Логотип компании">
-        <span>Все права защищены</span>
-        <span>1999-2018 SD Service Devices</span>
+        <img class="contacts__logo-img" src="./img/logo-footer.svg" alt="Логотип компании">
+        <div class="contacts__logo-rights rights">
+          <span class="contacts__logo-copyright rights__text">Все права защищены</span>
+          <span class="contacts__logo-copyright rights__trade-mark">1999-2018 SD Service Devices</span>
+        </div>
         <ul class="contacts__social">
-          <li><a href="facebook.com"><img src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
-          <li><a href="facebook.com"><img src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
-          <li><a href="facebook.com"><img src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
+          <li><a class="contacts__social-item" href="facebook.com"><img src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
+          <li><a class="contacts__social-item" href="facebook.com"><img src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
+          <li><a class="contacts__social-item" href="facebook.com"><img src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
         </ul>
       </div>
 
       <div class="contacts__section-wrapper">
-        <div class="contacts__section contacts__links">
-          <div>
+        <div class="contacts__section contacts__links-wrapper">
+          <div class="contacts__title-wrapper">
             <h3 class="contacts__title">Разделы сайта</h3>
-            <button><img src="./img/plus-icon.svg" alt="раскрыть разделы сайта"></button>
+            <button class="contacts__section-button"><img src="./img/plus-icon.svg" alt="раскрыть разделы сайта"></button>
           </div>
-          <ul>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Продукты</a></li>
-            <li><a href="#">Производство печатных плат</a></li>
-            <li><a href="#">Монтаж печатных плат</a></li>
-            <li><a href="#">Комплектующие</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+          <ul class="contacts__links">
+            <li><a class="contacts__links-item" href="#">О компании</a></li>
+            <li><a class="contacts__links-item" href="#">Продукты</a></li>
+            <li><a class="contacts__links-item" href="#">Производство печатных плат</a></li>
+            <li><a class="contacts__links-item" href="#">Монтаж печатных плат</a></li>
+            <li><a class="contacts__links-item" href="#">Комплектующие</a></li>
+            <li><a class="contacts__links-item" href="#">Доставка</a></li>
+            <li><a class="contacts__links-item" href="#">Контакты</a></li>
           </ul>
         </div>
 
         <div class="contacts__section contacts__adress">
-          <div>
+          <div class="contacts__title-wrapper">
             <h3 class="contacts__title">Наш офис</h3>
-            <button><img src="./img/minus-icon.svg" alt="раскрыть адрес офиса"></button>
+            <button class="contacts__section-button"><img src="./img/minus-icon.svg" alt="раскрыть адрес офиса"></button>
           </div>
-          <div>
+          <div class="contacts__adress-list">
             <p>г. Мытищи, Олимпийский проспект, д.10</p>
-            <p>+7 (495) 589-40-50</p>
-            <p>+7 (925) 003-87-67</p>
-            <p>+7 (926) 926-080-79</p>
+            <a class="contacts__adress-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            <a class="contacts__adress-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
+            <a class="contacts__adress-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
           </div>
         </div>
       </div>
 
+    </div>
+
       <div class="contacts__copyright">
-        <p>Условия конфеденциальности</p>
-        <p>Developed by wow studio</p>
+        <p class="contacts__copyright-text">Условия конфеденциальности</p>
+        <p class="contacts__copyright-text">Developed by wow studio</p>
       </div>
 
     </div>
-
 
   </footer>
 

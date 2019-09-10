@@ -1,3 +1,8 @@
+.advantages {
+  margin-top: 38px;
+  margin-bottom: 72px;
+}
+
 .advantages__header {
   @include visually-hidden;
 }
@@ -9,6 +14,17 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 140.62%;
+  margin: 10px 0;
+}
+
+.advantages__text {
+  font-family: "PT Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #666666;
+  margin: 0;
 }
 
 .advantages__item:hover .advantages__title {
@@ -24,15 +40,15 @@
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
   border-left: 2px solid #00b2ff;
-  margin: 15px;
-  padding: 20px;
+  margin: 17px 15px;
+  padding: 22px;
 
   &:nth-child(2)::before {
     content: "";
     display: block;
     position: relative;
     width: 42px;
-    height: 42px;
+    height: 40px;
     background-image: url("/img/stopwatch.svg");
     background-repeat: no-repeat;
   }
@@ -42,7 +58,7 @@
     display: block;
     position: relative;
     width: 42px;
-    height: 42px;
+    height: 40px;
     background-image: url("/img/hired.svg");
     background-repeat: no-repeat;
   }
@@ -52,7 +68,7 @@
     display: block;
     position: relative;
     width: 42px;
-    height: 42px;
+    height: 40px;
     background-image: url("/img/detective.svg");
     background-repeat: no-repeat;
   }
@@ -62,7 +78,7 @@
     display: block;
     position: relative;
     width: 42px;
-    height: 42px;
+    height: 40px;
     background-image: url("/img/tag.svg");
     background-repeat: no-repeat;
   }
@@ -102,6 +118,13 @@
     &:nth-child(2n) {
       margin-right: 20px;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .advantages__title {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 

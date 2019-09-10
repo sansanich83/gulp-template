@@ -12,12 +12,13 @@
 }
 
 .about__text {
-  font-family: "PT Mono", sans-serif;
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #666666;
+  margin-bottom: 35px;
 }
 
 .about__link {
@@ -34,9 +35,11 @@
   border: 1px solid #00b2ff;
   border-radius: 4px;
   padding: 12px 30px;
-  margin-top: 33px;
-  margin-bottom: 66px;
+  margin-top: 0;
+  margin-bottom: 40px;
   display: inline-block;
+  width: 180px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 750px) {
@@ -47,7 +50,9 @@
   }
 
   .about__header {
-
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
     margin-top: -350px;
     margin-bottom: 50px;
 
@@ -63,6 +68,17 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__header {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  .about__text {
+    line-height: 22px;
   }
 }
 

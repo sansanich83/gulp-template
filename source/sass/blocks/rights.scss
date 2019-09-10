@@ -1,0 +1,15 @@
+.rights__text {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .rights {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+  }
+
+  .rights__text {
+    display: inline-block;
+  }
+}
