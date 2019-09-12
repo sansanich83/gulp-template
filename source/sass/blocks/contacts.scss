@@ -112,21 +112,51 @@
 @media (min-width: 750px) {
   .contacts__logo {
     flex-direction: row;
-    min-height: 100px;
+    min-height: 95px;
   }
 
   .contacts__social {
-    margin-top: 20px;
+    margin-top: 31px;
+    margin-right: 16px;
   }
 
   .contacts__logo-img {
     margin: 20px;
     width: 217px;
     height: 52px;
+    margin-left: 25px;
+    margin-top: 17px;
+  }
+
+  .contacts__logo-rights {
+    margin: 35px auto;
+    padding-left: 10px;
+  }
+
+  .contacts__title-wrapper {
+    width: 70%;
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: -17px;
   }
 
   .contacts__section-wrapper {
     display: flex;
+    padding-bottom: 21px;
+  }
+
+  .contacts__adress {
+    margin-left: -25px;
+  }
+
+  .contacts__adress-list {
+    margin-left: 27px;
+    width: 334px;
+  }
+
+  .contacts__adress-phone:nth-of-type(1) {
+    margin-top: -14px;
   }
 
   .contacts__section-button {
@@ -136,6 +166,8 @@
   .contacts__links {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin-left: 25px;
   }
 
   .contacts__links-item {
@@ -166,12 +198,21 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    height: 264px;
   }
 
   .contacts__logo {
     width: 230px;
     flex-direction: column;
     margin-top: 50px;
+  }
+
+  .contacts__logo-img {
+    margin: 11px 15px 26px 0;
+  }
+
+  .contacts__title-wrapper {
+    margin: -15px 0 -17px 26px;
   }
 
   .contacts__section-wrapper {
@@ -186,14 +227,22 @@
 
   .contacts__copyright {
     width: 100%;
-    justify-content: flex-start;
-    padding-left: 50%;
     box-sizing: border-box;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+
+  .contacts__copyright-text {
+    box-sizing: border-box;
+    margin-right: 110px;
+    margin-top: 10px;
+    width: 25%;
   }
 
   .contacts__logo-rights {
     position: relative;
-    bottom: -100px;
+    bottom: -77px;
+    left: -36px;
     margin-left: 30px;
   }
 
@@ -212,11 +261,12 @@
 @media (min-width: 1420px) {
   .contacts__wrapper {
     width: 1415px;
+    height: 264px;
   }
 
   .contacts__social {
     margin-top: -90px;
-    margin-left: -40px;
+    margin-left: -100px;
   }
 
   .contacts__section-wrapper {

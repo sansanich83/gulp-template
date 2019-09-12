@@ -50,7 +50,7 @@
   }
 }
 
-.main-screen button {
+.main-screen__button {
   color: white;
   background-color: #00b2ff;
   border: none;
@@ -75,9 +75,9 @@
     background-image:
       url("/img/main-bg2-tablet.png"),
       url("/img/main-bg-tablet.png");
-    background-position-x: 65vw, -372px;
-    background-position-y: 112px, -187px;
-    min-height: 686px;
+    background-position-x: 66vw, -372px;
+    background-position-y: 127px, -170px;
+    min-height: 703px;
     margin-top: -72px;
   }
 
@@ -100,7 +100,7 @@
     margin-bottom: 55px;
   }
 
-  .main-screen button {
+  .main-screen__button {
     margin-left: 18vw;
     margin-top: 0;
     width: 379px;
@@ -121,8 +121,8 @@
     background-image:
       url("/img/main-bg2-desktop.png"),
       url("/img/main-bg-desktop.png");
-    background-position-x: 65vw, 0;
-    background-position-y: 112px, -69px;
+    background-position-x: 54vw, 0;
+    background-position-y: 254px, -69px;
     min-height: 878px;
     margin-top: -85px;
   }
@@ -137,7 +137,8 @@
     text-transform: uppercase;
     color: #ffffff;
     width: 718px;
-    padding-top: 300px;
+    padding-top: 315px;
+    margin-left: 13vw;
   }
 
   .main-screen__slogan {
@@ -147,6 +148,13 @@
     font-size: 22px;
     line-height: 34px;
     width: 683px;
+    margin-bottom: 44px;
+
+    &::before {
+      width: 63px;
+      left: -94px;
+      top: 16px;
+    }
   }
 
   .main-screen__button {
@@ -158,6 +166,8 @@
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    margin-left: 18vw;
+    width: 409px;
   }
 
   .main-screen__scroll {
@@ -168,7 +178,8 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    margin-left: 4vw;
+    margin-left: 11vw;
+    margin-top: 100px;
     transform: rotate(-90deg);
     width: 93px;
     height: 16px;
