@@ -9,7 +9,7 @@
 
 .advantages__title {
   color: #00b2ff;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -18,7 +18,7 @@
 }
 
 .advantages__text {
-  font-family: "PT Mono", monospace;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -49,7 +49,7 @@
     position: relative;
     width: 42px;
     height: 40px;
-    background-image: url("/img/stopwatch.svg");
+    background-image: url("../img/stopwatch.svg");
     background-repeat: no-repeat;
   }
 
@@ -59,7 +59,7 @@
     position: relative;
     width: 42px;
     height: 40px;
-    background-image: url("/img/hired.svg");
+    background-image: url("../img/hired.svg");
     background-repeat: no-repeat;
   }
 
@@ -69,7 +69,7 @@
     position: relative;
     width: 42px;
     height: 40px;
-    background-image: url("/img/detective.svg");
+    background-image: url("../img/detective.svg");
     background-repeat: no-repeat;
   }
 
@@ -79,24 +79,24 @@
     position: relative;
     width: 42px;
     height: 40px;
-    background-image: url("/img/tag.svg");
+    background-image: url("../img/tag.svg");
     background-repeat: no-repeat;
   }
 
   &:nth-child(2):hover::before {
-    background-image: url("/img/stopwatch-white.svg");
+    background-image: url("../img/stopwatch-white.svg");
   }
 
   &:nth-child(3):hover::before {
-    background-image: url("/img/hired-white.svg");
+    background-image: url("../img/hired-white.svg");
   }
 
   &:nth-child(4):hover::before {
-    background-image: url("/img/detective-white.svg");
+    background-image: url("../img/detective-white.svg");
   }
 
   &:nth-child(5):hover::before {
-    background-image: url("/img/tag-white.svg");
+    background-image: url("../img/tag-white.svg");
   }
 }
 

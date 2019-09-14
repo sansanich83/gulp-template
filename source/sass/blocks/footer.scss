@@ -11,7 +11,7 @@
 .footer__ask-header {
   margin: 0;
   margin-top: 13px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -19,7 +19,7 @@
 }
 
 .footer__ask-text {
-  font-family: "PT Mono", monospace;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -36,7 +36,7 @@
   border: 1px solid white;
   border-radius: 4px;
   color: white;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -47,12 +47,17 @@
   width: 290px;
   height: 46px;
   margin-bottom: 25px;
+
+  &:hover,
+  :focus {
+    @include light-hover;
+  }
 }
 
 .footer__form-field {
   background-color: #19baff;
   border: none;
-  font-family: "PT Mono", monospace;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -64,6 +69,14 @@
 
   &::-webkit-input-placeholder {
     color: white;
+  }
+
+  &:hover,
+  :focus {
+    outline-color: #ffffff;
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
   }
 }
 
@@ -85,7 +98,7 @@
 }
 
 .footer__form-label {
-  font-family: "PT Mono", monospace;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -96,6 +109,8 @@
   display: block;
   width: 230px;
   margin-bottom: 15px;
+  padding-left: 30px;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -107,6 +122,12 @@
     top: 17px;
     left: -32px;
   }
+
+  &:hover,
+  :focus {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 .footer__form-agreement-input {
@@ -114,7 +135,7 @@
 }
 
 .footer__form-agreement-input:checked + .footer__form-label::before {
-  background-image: url("/img/vector.svg");
+  background-image: url("../img/vector.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -216,7 +237,7 @@
 
 @media (min-width: 1220px) {
   .footer__ask {
-    background-image: url("/img/форма.png");
+    background-image: url("../img/form-bg.png");
     background-position-y: -60px;
   }
 

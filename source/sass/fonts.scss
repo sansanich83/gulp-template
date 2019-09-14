@@ -3,7 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Condensed Regular"),
-    url("../fonts/RobotoCondensed-Regular.ttf") format("ttf");
+    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +12,8 @@
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Condensed Bold"),
-    url("../fonts/RobotoCondensed-Bold.ttf") format("ttf");
+    url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -19,5 +21,6 @@
   font-style: normal;
   font-weight: 400;
   src: local("PT Mono"),
-    url("../fonts/PTMono-Regular.ttf") format("ttf");
+    url("../fonts/PTMono-Regular.woff2") format("woff2"),
+    url("../fonts/PTMono-Regular.woff") format("woff");
 }

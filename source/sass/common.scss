@@ -7,6 +7,24 @@
   overflow: hidden;
 }
 
+@mixin standard-hover {
+  outline-color: #00b2ff;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+  cursor: pointer;
+}
+
+@mixin light-hover {
+  outline-color: #00b2ff;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+  color: #00b2ff;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

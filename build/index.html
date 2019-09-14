@@ -13,9 +13,9 @@
 
   <header class="header">
     <div class="header__logotype">
-      <a href="index.html">
+      <a aria-label="ссылка на главный экран" class="header__logotype-a" href="index.html">
         <picture>
-          <source media="(min-width: 500px)" srcset="./img/logo-tablet.svg">
+          <source media="(min-width: 750px)" srcset="./img/logo-tablet.svg">
           <img class="header__logotype-img" src="./img/logo-mobile.svg" width="38" height="38" alt="умный девайс">
         </picture>
       </a>
@@ -25,27 +25,27 @@
         <span class="header__nav-menu-span"></span>
         <span class="header__nav-menu-span"></span>
       </nav>
-      <a class="header__email header__connect-type" href="mailto:someone@yoursite.com"> <img class="header__connect-type-img header__connect-type--mail" height="24px" src="./img/envelope.svg" alt="написать емэйл">
+      <a aria-label="написать письмо" class="header__email header__connect-type" href="mailto:someone@yoursite.com"> <img class="header__connect-type-img header__connect-type-img--mail" height="24" src="./img/envelope.svg" alt="написать емэйл">
         <span class="header__controls-info">info@sd.ru</span>
       </a>
-      <a class="header__phone header__connect-type" href="tel:+78142332211"><img class="header__connect-type-img header__connect-type--phone" height="24px" src="./img/phone-call.svg" alt="набрать телефонный номер">
+      <a aria-label="набрать телефонный номер" class="header__phone header__connect-type" href="tel:+78142332211"><img class="header__connect-type-img header__connect-type-img--phone" height="24" src="./img/phone-call.svg" alt="набрать телефонный номер">
         <span class="header__controls-info">+7 (495) 000 52 52</span>
       </a>
-      <button class="header__callback popup-callback__open-button">Заказать звонок</button>
+      <button type="submit" class="header__callback popup-callback__open-button">Заказать звонок</button>
 
       <div class="popup-callback">
         <div onclick="event.stopPropagation()" class="popup-callback__ask footer__ask">
           <div class="popup-callback__ask-wrapper footer__ask-wrapper">
             <h3 class="popup-callback__ask-header footer__ask-header">Закажите звонок</h3>
             <p class="footer__ask-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-            <form class="footer__form" action="">
+            <form class="footer__form" action="https://echo.htmlacademy.ru">
               <input class="popup-callback__form-field--input footer__form-field footer__form-field--input" type="text" placeholder="Имя">
-              <input class="popup-callback__form-field--input footer__form-field footer__form-field--input" type="phone" placeholder="Телефон">
+              <input class="popup-callback__form-field--input footer__form-field footer__form-field--input" type="number" placeholder="Телефон">
               <textarea class="popup-callback__form-field--textarea footer__form-field footer__form-field--textarea" placeholder="Ваш вопрос"></textarea>
               <button type="submit" class="popup-callback__form-button footer__form-button">Отправить</button>
               <div class="footer__form-agreement">
-                <input class="footer__form-agreement-input" checked="" type="checkbox" id="#agreement">
-                <label class="popup-callback__form-label footer__form-label" for="#agreement">Я согласен на обработку
+                <input class="footer__form-agreement-input" checked="" type="checkbox" id="popup-agreement">
+                <label class="popup-callback__form-label footer__form-label" for="popup-agreement">Я согласен на обработку
                   персональных данных</label>
               </div>
             </form>
@@ -59,9 +59,9 @@
   <section class="main-screen">
     <h1 class="main-screen__title">Печатные платы</h1>
     <p class="main-screen__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-    <button class="main-screen__button"><span class="main-screen__button-desktop">Получить бесплатную
+    <button aria-label="Получить бесплатную консультацию" type="button" class="main-screen__button"><span class="main-screen__button-desktop">Получить бесплатную
         консультацию</span> <span class="main-screen__button-mobile">Бесплатная консультация</span></button>
-    <a class="main-screen__scroll" href="#">скрол вниз</a>
+    <a aria-label="скрол вниз" class="main-screen__scroll" href="#">скрол вниз</a>
   </section>
 
   <section class="advantages">
@@ -108,13 +108,13 @@
 
   <section class="goods">
     <h2 class="goods__header">Service Device предлагает следующие товары и услуги </h2>
-    <a class="goods__item" href="#">
+    <a aria-label="Производство печатных плат" class="goods__item" href="#">
       <span class="goods__text">Производство печатных плат</span>
     </a>
-    <a class="goods__item" href="#">
+    <a aria-label="Монтаж печатных плат" class="goods__item" href="#">
       <span class="goods__text">Монтаж печатных плат</span>
     </a>
-    <a class="goods__item" href="#">
+    <a aria-label="Комплектующие для светотехники" class="goods__item" href="#">
       <span class="goods__text">Комплектующие для светотехники</span>
     </a>
 
@@ -130,14 +130,14 @@
           Задайте их нам!
         </h3>
         <p class="footer__ask-text">Мы проконсультируем Вас бесплатно</p>
-        <form class="footer__form" action="">
-          <input class="footer__form-field footer__form-field--input" type="text" placeholder="Имя">
-          <input class="footer__form-field footer__form-field--input" type="phone" placeholder="Телефон">
-          <textarea class="footer__form-field footer__form-field--textarea" placeholder="Ваш вопрос"></textarea>
-          <button type="submit" class="footer__form-button">Задать вопрос</button>
+        <form class="footer__form" action="https://echo.htmlacademy.ru">
+          <input aria-label="ввод имени" class="footer__form-field footer__form-field--input" type="text" placeholder="Имя">
+          <input aria-label="ввод телефона" class="footer__form-field footer__form-field--input" type="number" placeholder="Телефон">
+          <textarea aria-label="ввод вопроса" class="footer__form-field footer__form-field--textarea" placeholder="Ваш вопрос"></textarea>
+          <button aria-label="отправить вопрос" type="submit" class="footer__form-button">Задать вопрос</button>
           <div class="footer__form-agreement">
-            <input class="footer__form-agreement-input" checked="" type="checkbox" id="#agreement">
-            <label class="footer__form-label" for="#agreement">Я согласен на обработку персональных данных</label>
+            <input class="footer__form-agreement-input" checked="" type="checkbox" id="footer-agreement">
+            <label class="footer__form-label" for="footer-agreement">Я согласен на обработку персональных данных</label>
           </div>
         </form>
       </div>
@@ -153,9 +153,9 @@
             <span class="contacts__logo-copyright rights__trade-mark">1999-2018 SD Service Devices</span>
           </div>
           <ul class="contacts__social">
-            <li><a class="contacts__social-item" href="facebook.com"><img src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
-            <li><a class="contacts__social-item" href="facebook.com"><img src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
-            <li><a class="contacts__social-item" href="facebook.com"><img src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
+            <li><a aria-label="наша страница на фэйсбук" class="contacts__social-item" href="facebook.com"><img src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
+            <li><a aria-label="наша страница на одноклассники" class="contacts__social-item" href="ok.com"><img src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
+            <li><a aria-label="наша страница на вконтакте" class="contacts__social-item" href="vk.com"><img src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
           </ul>
         </div>
 
@@ -163,29 +163,29 @@
           <div class="contacts__section contacts__links-wrapper">
             <div class="contacts__title-wrapper">
               <h3 class="contacts__title">Разделы сайта</h3>
-              <button class="contacts__section-button"><img src="./img/plus-icon.svg" alt="раскрыть разделы сайта"></button>
+              <button type="button" class="contacts__section-button"><img src="./img/plus-icon.svg" alt="раскрыть разделы сайта"></button>
             </div>
             <ul class="contacts__links">
-              <li><a class="contacts__links-item" href="#">О компании</a></li>
-              <li><a class="contacts__links-item" href="#">Продукты</a></li>
-              <li><a class="contacts__links-item" href="#">Производство печатных плат</a></li>
-              <li><a class="contacts__links-item" href="#">Монтаж печатных плат</a></li>
-              <li><a class="contacts__links-item" href="#">Комплектующие</a></li>
-              <li><a class="contacts__links-item" href="#">Доставка</a></li>
-              <li><a class="contacts__links-item" href="#">Контакты</a></li>
+              <li><a aria-label="ссылка на раздел О компании" class="contacts__links-item" href="#">О компании</a></li>
+              <li><a aria-label="ссылка на раздел Продукты" class="contacts__links-item" href="#">Продукты</a></li>
+              <li><a aria-label="ссылка на раздел Производство печатных плат" class="contacts__links-item" href="#">Производство печатных плат</a></li>
+              <li><a aria-label="ссылка на раздел Монтаж печатных плат" class="contacts__links-item" href="#">Монтаж печатных плат</a></li>
+              <li><a aria-label="ссылка на раздел Комплектующие" class="contacts__links-item" href="#">Комплектующие</a></li>
+              <li><a aria-label="ссылка на раздел Доставка" class="contacts__links-item" href="#">Доставка</a></li>
+              <li><a aria-label="ссылка на раздел Контакты" class="contacts__links-item" href="#">Контакты</a></li>
             </ul>
           </div>
 
           <div class="contacts__section contacts__adress">
             <div class="contacts__title-wrapper">
               <h3 class="contacts__title">Наш офис</h3>
-              <button class="contacts__section-button"><img src="./img/minus-icon.svg" alt="раскрыть адрес офиса"></button>
+              <button type="button" class="contacts__section-button"><img src="./img/minus-icon.svg" alt="раскрыть адрес офиса"></button>
             </div>
             <div class="contacts__adress-list">
               <p>г. Мытищи, Олимпийский проспект, д.10</p>
-              <a class="contacts__adress-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-              <a class="contacts__adress-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
-              <a class="contacts__adress-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
+              <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
+              <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
             </div>
           </div>
         </div>
