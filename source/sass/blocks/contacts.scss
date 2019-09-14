@@ -59,6 +59,11 @@
 
 .contacts__adress-phone {
   color: #1b2d37;
+
+  &:hover,
+  :focus {
+    text-decoration: underline;
+  }
 }
 
 .contacts__links {

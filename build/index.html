@@ -25,33 +25,14 @@
         <span class="header__nav-menu-span"></span>
         <span class="header__nav-menu-span"></span>
       </nav>
-      <a aria-label="написать письмо" class="header__email header__connect-type" href="mailto:someone@yoursite.com"> <img class="header__connect-type-img header__connect-type-img--mail" height="24" src="./img/envelope.svg" alt="написать емэйл">
+      <a aria-label="написать письмо" class="header__email header__connect-type" href="mailto:someone@yoursite.com">
+        <img class="header__connect-type-img header__connect-type-img--mail" height="24" src="./img/envelope.svg" alt="написать емэйл">
         <span class="header__controls-info">info@sd.ru</span>
       </a>
       <a aria-label="набрать телефонный номер" class="header__phone header__connect-type" href="tel:+78142332211"><img class="header__connect-type-img header__connect-type-img--phone" height="24" src="./img/phone-call.svg" alt="набрать телефонный номер">
         <span class="header__controls-info">+7 (495) 000 52 52</span>
       </a>
-      <button type="submit" class="header__callback popup-callback__open-button">Заказать звонок</button>
-
-      <div class="popup-callback">
-        <div onclick="event.stopPropagation()" class="popup-callback__ask footer__ask">
-          <div class="popup-callback__ask-wrapper footer__ask-wrapper">
-            <h3 class="popup-callback__ask-header footer__ask-header">Закажите звонок</h3>
-            <p class="footer__ask-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-            <form class="footer__form" action="https://echo.htmlacademy.ru">
-              <input class="popup-callback__form-field--input footer__form-field footer__form-field--input" type="text" placeholder="Имя">
-              <input class="popup-callback__form-field--input footer__form-field footer__form-field--input" type="number" placeholder="Телефон">
-              <textarea class="popup-callback__form-field--textarea footer__form-field footer__form-field--textarea" placeholder="Ваш вопрос"></textarea>
-              <button type="submit" class="popup-callback__form-button footer__form-button">Отправить</button>
-              <div class="footer__form-agreement">
-                <input class="footer__form-agreement-input" checked="" type="checkbox" id="popup-agreement">
-                <label class="popup-callback__form-label footer__form-label" for="popup-agreement">Я согласен на обработку
-                  персональных данных</label>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+      <button type="submit" class="header__callback">Заказать звонок</button>
 
     </div>
   </header>
@@ -64,47 +45,52 @@
     <a aria-label="скрол вниз" class="main-screen__scroll" href="#">скрол вниз</a>
   </section>
 
-  <section class="advantages">
-    <div class="advantages__item-wrapper">
-      <h2 class="advantages__header">Преимущества</h2>
-      <div class="advantages__item">
-        <h3 class="advantages__title">Оперативные сроки</h3>
-        <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
-          производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-      </div>
-      <div class="advantages__item">
-        <h3 class="advantages__title">Крупные поставщики</h3>
-        <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
-          HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
-        </p>
-      </div>
-      <div class="advantages__item">
-        <h3 class="advantages__title">Полная конфиденциальность</h3>
-        <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.
-        </p>
-      </div>
-      <div class="advantages__item">
-        <h3 class="advantages__title">Персонализация стоимости</h3>
-        <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
-          цену, которая Вас
-          устраивает.
-        </p>
-      </div>
-    </div>
-  </section>
+  <div class="middle-bg">
 
-  <section class="about">
-    <h2 class="about__header">О компании</h2>
-    <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
-      технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-    </p>
+    <section class="advantages">
+      <div class="advantages__item-wrapper">
+        <h2 class="advantages__header">Преимущества</h2>
+        <div class="advantages__item">
+          <h3 class="advantages__title">Оперативные сроки</h3>
+          <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
+            производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__title">Крупные поставщики</h3>
+          <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
+            HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__title">Полная конфиденциальность</h3>
+          <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__title">Персонализация стоимости</h3>
+          <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
+            цену, которая Вас
+            устраивает.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <p class="about__text"> Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
-      HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются
-      на предприятиях Российских Железных Дорог..
-    </p>
-    <a class="about__link" href="#">Подробнее</a>
-  </section>
+    <section class="about">
+      <h2 class="about__header">О компании</h2>
+      <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
+        технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+      </p>
+
+      <p class="about__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
+        REFOND. Печатные платы
+        и комплектующие Service Devices применяются на предприятиях Российских <span class="about__text-ellipsis">Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ,
+          АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+      </p>
+      <a class="about__link" href="#">Подробнее</a>
+    </section>
+
+  </div>
 
   <section class="goods">
     <h2 class="goods__header">Service Device предлагает следующие товары и услуги </h2>
@@ -121,29 +107,32 @@
   </section>
 
 
-  <footer class="footer">
-    <h2 class="footer__header">Обратная связь</h2>
+  <footer>
+    <div class="feedback">
+      <h2 class="feedback__header">Обратная связь</h2>
 
-    <div class="footer__ask">
-      <div class="footer__ask-wrapper">
-        <h3 class="footer__ask-header">Остались вопросы? <br>
-          Задайте их нам!
-        </h3>
-        <p class="footer__ask-text">Мы проконсультируем Вас бесплатно</p>
-        <form class="footer__form" action="https://echo.htmlacademy.ru">
-          <input aria-label="ввод имени" class="footer__form-field footer__form-field--input" type="text" placeholder="Имя">
-          <input aria-label="ввод телефона" class="footer__form-field footer__form-field--input" type="number" placeholder="Телефон">
-          <textarea aria-label="ввод вопроса" class="footer__form-field footer__form-field--textarea" placeholder="Ваш вопрос"></textarea>
-          <button aria-label="отправить вопрос" type="submit" class="footer__form-button">Задать вопрос</button>
-          <div class="footer__form-agreement">
-            <input class="footer__form-agreement-input" checked="" type="checkbox" id="footer-agreement">
-            <label class="footer__form-label" for="footer-agreement">Я согласен на обработку персональных данных</label>
-          </div>
-        </form>
+      <div class="feedback__ask">
+        <div class="feedback__ask-wrapper">
+          <h3 class="feedback__ask-header">Остались вопросы? <br>
+            Задайте их нам!
+          </h3>
+          <p class="feedback__ask-text">Мы проконсультируем Вас бесплатно</p>
+          <form class="feedback__form" action="https://echo.htmlacademy.ru">
+            <input aria-label="ввод имени" class="feedback__form-field feedback__form-field--input" type="text" placeholder="Имя">
+            <input aria-label="ввод телефона" class="feedback__form-field feedback__form-field--input" type="number" placeholder="Телефон">
+            <textarea aria-label="ввод вопроса" class="feedback__form-field feedback__form-field--textarea" placeholder="Ваш вопрос"></textarea>
+            <button aria-label="отправить вопрос" type="submit" class="feedback__form-button">Задать вопрос</button>
+            <div class="feedback__form-agreement">
+              <input class="feedback__form-agreement-input" checked="" type="checkbox" id="footer-agreement">
+              <label class="feedback__form-label" for="footer-agreement">Я согласен на обработку персональных
+                данных</label>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
-    <div class="footer__contacts contacts">
+    <div class="contacts">
       <div class="contacts__wrapper">
 
         <div class="contacts__logo">
@@ -169,8 +158,10 @@
               <li><a aria-label="ссылка на раздел О компании" class="contacts__links-item" href="#">О компании</a></li>
               <li><a aria-label="ссылка на раздел Продукты" class="contacts__links-item" href="#">Продукты</a></li>
               <li><a aria-label="ссылка на раздел Производство печатных плат" class="contacts__links-item" href="#">Производство печатных плат</a></li>
-              <li><a aria-label="ссылка на раздел Монтаж печатных плат" class="contacts__links-item" href="#">Монтаж печатных плат</a></li>
-              <li><a aria-label="ссылка на раздел Комплектующие" class="contacts__links-item" href="#">Комплектующие</a></li>
+              <li><a aria-label="ссылка на раздел Монтаж печатных плат" class="contacts__links-item" href="#">Монтаж
+                  печатных плат</a></li>
+              <li><a aria-label="ссылка на раздел Комплектующие" class="contacts__links-item" href="#">Комплектующие</a>
+              </li>
               <li><a aria-label="ссылка на раздел Доставка" class="contacts__links-item" href="#">Доставка</a></li>
               <li><a aria-label="ссылка на раздел Контакты" class="contacts__links-item" href="#">Контакты</a></li>
             </ul>
@@ -201,7 +192,31 @@
 
   </footer>
 
-  <script src="./js/popup-callback.js"></script>
+  <div class="feedback feedback--popup">
+    <div onclick="event.stopPropagation()" class="feedback__ask--popup feedback__ask">
+      <div class="feedback__ask-wrapper--popup feedback__ask-wrapper">
+        <div class="feddback__close">
+          <h2 class="feedback__ask-header--popup feedback__ask-header">Закажите звонок</h2>
+          <button aria-label="Закрыть заказ звонка" type="button" class="feedback__close-button"></button>
+        </div>
+        <p class="feedback__ask-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru">
+          <input class="feedback__form-field--popup-input feedback__form-field feedback__form-field--input" type="text" placeholder="Имя">
+          <input class="feedback__form-field--popup-input feedback__form-field feedback__form-field--input" type="number" placeholder="Телефон">
+          <textarea class="feedback__form-field--popup-textarea feedback__form-field feedback__form-field--textarea" placeholder="Ваш вопрос"></textarea>
+          <button type="submit" class="feedback__form-button--popup feedback__form-button">Отправить</button>
+          <div class="feedback__form-agreement">
+            <input class="feedback__form-agreement-input" checked="" type="checkbox" id="popup-agreement">
+            <label class="feedback__form-label--popup feedback__form-label" for="popup-agreement">Я согласен на
+              обработку
+              персональных данных</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
 
 </body>
 

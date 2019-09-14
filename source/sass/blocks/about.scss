@@ -21,6 +21,13 @@
   margin-bottom: 35px;
 }
 
+.about__text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
 .about__link {
   text-decoration: none;
   color: #00b2ff;
@@ -108,6 +115,10 @@
     padding-left: 180px;
     padding-right: 180px;
     margin-top: -5px;
+  }
+
+  .about__text-ellipsis {
+    white-space: normal;
   }
 
   .about__link {
