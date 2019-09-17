@@ -1,79 +1,62 @@
 .main-screen {
-  background-color: black;
   background-image:
-    url("../img/main-bg2-mobile.png"),
-    url("../img/main-bg-mobile.png");
-  background-position-x: right, -624px;
-  background-position-y: 92px, -187px;
+    url("../img/main-bg2-desktop.png"),
+    url("../img/main-bg-desktop.png");
+  background-position-x: 54vw, 0;
+  background-position-y: 254px, 0;
+  background-size: auto, cover;
+  min-height: 878px;
+  margin-top: -85px;
+  background-color: black;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 647px;
-  margin-top: -55px;
   color: #ffffff;
+}
+
+.main-screen__container {
+  width: 100%;
+  max-width: 1411px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  box-sizing: border-box;
 }
 
 .main-screen__title {
-  font-size: 40px;
-  line-height: 47px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: $main-font;
+  color: #ffffff;
+  width: 718px;
+  padding-top: 315px;
   margin-top: 0;
-  margin-left: 4vw;
-  padding-top: 284px;
-}
-
-.main-screen__scroll {
-  display: none;
-
-  &:hover,
-  :focus {
-    @include standard-hover;
-  }
 }
 
 .main-screen__slogan {
-  width: 70%;
-  margin-left: 21vw;
   font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 156.8%;
+  font-size: 22px;
+  line-height: 34px;
+  width: 683px;
+  margin-bottom: 44px;
   color: #ffffff;
+  margin-left: 94px;
 
   &::before {
+    width: 63px;
+    left: -94px;
+    top: 16px;
     content: "";
     display: block;
     position: relative;
-    left: -50px;
-    top: 19px;
-    width: 32px;
     height: 0;
     border-top: 1px solid white;
-  }
-}
-
-.main-screen__button {
-  color: white;
-  background-color: #00b2ff;
-  border: none;
-  border-radius: 4px;
-  width: 90%;
-  min-height: 55px;
-  margin: 29px 5%;
-  font-family: $main-font;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
-
-  &:hover,
-  :focus {
-    @include light-hover;
   }
 }
 
@@ -81,15 +64,60 @@
   display: none;
 }
 
-@media (min-width: 750px) {
+.main-screen__button {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: 409px;
+  margin-left: 93px;
+  color: white;
+  background-color: #00b2ff;
+  border: none;
+  border-radius: 4px;
+  min-height: 55px;
+
+  &:hover,
+  :focus {
+    @include light-hover;
+  }
+}
+
+.main-screen__scroll {
+  display: block;
+  color: #ffffff;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 100px;
+  margin-left: -40px;
+  transform: rotate(-90deg);
+  width: 93px;
+  height: 16px;
+  opacity: 0.5;
+
+  &:hover,
+  :focus {
+    @include standard-hover;
+  }
+}
+
+@media (max-width: 1023px) {
   .main-screen {
     background-image:
       url("../img/main-bg2-tablet.png"),
       url("../img/main-bg-tablet.png");
     background-position-x: 66vw, -372px;
-    background-position-y: 127px, -170px;
-    min-height: 703px;
-    margin-top: -72px;
+    background-position-y: 127px, 0;
+    background-size: auto, cover;
+    min-height: 686px;
+    margin-top: -85px;
   }
 
   .main-screen__title {
@@ -97,109 +125,107 @@
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.07em;
-    margin-left: 11vw;
-    padding-top: 205px;
-    margin-bottom: 28px;
+    padding-top: 189px;
+    margin-bottom: 17px;
+    margin-left: 65px;
   }
 
   .main-screen__slogan {
     width: 356px;
     font-size: 18px;
     line-height: 156.8%;
-    margin-left: 18vw;
     margin-top: 10px;
     margin-bottom: 55px;
-  }
-
-  .main-screen__button {
-    margin-left: 18vw;
-    margin-top: 0;
-    width: 379px;
-    min-height: 55px;
-  }
-
-  .main-screen__button-desktop {
-    display: inline-block;
-  }
-
-  .main-screen__button-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main-screen {
-    background-image:
-      url("../img/main-bg2-desktop.png"),
-      url("../img/main-bg-desktop.png");
-    background-position-x: 54vw, 0;
-    background-position-y: 254px, -69px;
-    min-height: 878px;
-    margin-top: -85px;
-  }
-
-  .main-screen__title {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 94px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: #ffffff;
-    width: 718px;
-    padding-top: 315px;
-    margin-left: 13vw;
-  }
-
-  .main-screen__slogan {
-    font-family: $secondary-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 34px;
-    width: 683px;
-    margin-bottom: 44px;
+    margin-left: 115px;
 
     &::before {
-      width: 63px;
-      left: -94px;
-      top: 16px;
+      left: -50px;
+      top: 19px;
+      width: 32px;
     }
   }
 
   .main-screen__button {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-left: 18vw;
-    width: 409px;
+    margin-top: 0;
+    width: 379px;
+    min-height: 55px;
+    margin-left: 115px;
+  }
+
+  .main-screen__button--desktop {
+    display: inline-block;
+  }
+
+  .main-screen__button--mobile {
+    display: none;
   }
 
   .main-screen__scroll {
-    display: block;
-    color: #ffffff;
-    font-family: $secondary-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 11vw;
-    margin-top: 100px;
-    transform: rotate(-90deg);
-    width: 93px;
-    height: 16px;
-    opacity: 0.5;
+    display: none;
   }
 }
 
-@media (min-width: 1920px) {
+@media (max-width: 767px) {
   .main-screen {
-    background-size: auto, cover;
+    background-image:
+      url("../img/main-bg2-mobile.png"),
+      url("../img/main-bg-mobile.png");
+    background-position-x: right, -624px;
+    background-position-y: 92px, 0;
+    min-height: 647px;
+    margin-top: -55px;
+  }
+
+  .main-screen__container {
+    padding-left: 0;
+  }
+
+  .main-screen__title {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $main-font;
+    margin-left: 4vw;
+    padding-top: 284px;
+    width: 250px;
+    margin-bottom: 19px;
+  }
+
+  .main-screen__slogan {
+    width: 70%;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 156.8%;
+    margin-left: 66px;
+    margin-bottom: 42px;
+
+    &::before {
+      left: -50px;
+      top: 19px;
+      width: 32px;
+    }
+  }
+
+  .main-screen__button {
+    width: 90%;
+    margin: 0 5%;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .main-screen__button--desktop {
+    display: none;
+  }
+
+  .main-screen__button--mobile {
+    display: inline-block;
   }
 }

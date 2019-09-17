@@ -43,6 +43,11 @@
 .feedback__form-field--popup-input {
   margin-top: 15px;
   margin-bottom: 15px;
+  width: 426px;
+
+  &:nth-child(1) {
+    margin-right: 0;
+  }
 }
 
 .feedback__form-field--popup-textarea {

@@ -1,49 +1,60 @@
 .goods {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 125px;
   background-color: #1b2d37;
   color: white;
   box-sizing: border-box;
-  padding-bottom: 73px;
+}
+
+.goods__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1213px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .goods__item {
-  color: white;
-  display: block;
-  box-sizing: border-box;
-  width: 90%;
-  max-width: 720px;
-  min-height: 256px;
-  margin: 39px auto -8px;
   background-repeat: no-repeat;
   background-position-x: right, center;
   background-position-y: bottom, center;
-  border: 1px solid transparent;
-
-  &:hover,
-  :focus {
-    @include standard-hover;
-  }
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  width: 31.1%;
+  max-width: 370px;
+  min-height: 620px;
 
   &:nth-child(2) {
     background-image:
       url("../img/arrow.png"),
-      url("../img/produce-tablet.png");
+      url("../img/produce-desktop.png");
+    margin-right: 5px;
   }
 
   &:nth-child(3) {
     background-image:
       url("../img/arrow.png"),
-      url("../img/mount-tablet.png");
+      url("../img/mount-desktop.png");
+    margin-right: 15px;
+    margin-left: 15px;
   }
-
 
   &:nth-child(4) {
     background-image:
       url("../img/arrow.png"),
-      url("../img/light-tablet.png");
+      url("../img/light-desktop.png");
+    margin-left: 5px;
   }
 }
 
 .goods__text {
+  margin-left: 43px;
+  margin-top: 53px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -51,37 +62,84 @@
   line-height: 30px;
   width: 157px;
   display: inline-block;
-  margin-left: 35px;
-  margin-top: 25px;
 }
 
 .goods__header {
+  width: 80%;
+  max-width: none;
+  font-size: 36px;
+  line-height: 51px;
+  margin-top: 37px;
+  margin-bottom: 52px;
+  margin-left: 0;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 140.62%;
   padding-top: 51px;
-  padding-left: 24px;
+  padding-left: 0;
   padding-right: 15px;
 }
 
-@media (min-width: 750px) {
+@media (max-width: 1023px) {
   .goods {
     padding-bottom: 83px;
   }
 
   .goods__header {
     font-size: 32px;
-    margin-left: 25px;
-    padding-left: 0;
-    padding-right: 120px;
-    margin-bottom: 10px;
+    padding-right: 0;
+    padding-left: 5px;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .goods__wrapper {
+    padding: 0;
   }
 
   .goods__item {
-    margin: 50px auto -4px;
     width: 94%;
+    color: white;
+    display: block;
+    box-sizing: border-box;
+    max-width: 720px;
+    min-height: 256px;
+    background-repeat: no-repeat;
+    background-position-x: right, center;
+    background-position-y: bottom, center;
+    border: 1px solid transparent;
+
+    &:hover,
+    :focus {
+      @include standard-hover;
+    }
+
+    &:nth-child(2) {
+      background-image:
+        url("../img/arrow.png"),
+        url("../img/produce-tablet.png");
+      margin: 0 auto;
+      margin-bottom: 45px;
+    }
+
+    &:nth-child(3) {
+      background-image:
+        url("../img/arrow.png"),
+        url("../img/mount-tablet.png");
+      margin: 0 auto;
+      margin-bottom: 45px;
+    }
+
+
+    &:nth-child(4) {
+      background-image:
+        url("../img/arrow.png"),
+        url("../img/light-tablet.png");
+      margin: 0 auto;
+      margin-bottom: 0;
+    }
   }
 
   .goods__text {
@@ -90,59 +148,22 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 767px) {
   .goods {
-
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 135px;
-  }
-
-  .goods__item {
-    background-repeat: no-repeat;
-    background-position-x: right, center;
-    background-position-y: bottom, center;
-    color: white;
-    display: block;
-    box-sizing: border-box;
-    width: 30%;
-    max-width: 370px;
-    min-height: 620px;
-
-    &:nth-child(2) {
-      background-image:
-        url("../img/arrow.png"),
-        url("../img/produce-desktop.png");
-      margin-right: 5px;
-    }
-
-    &:nth-child(3) {
-      background-image:
-        url("../img/arrow.png"),
-        url("../img/mount-desktop.png");
-      margin-right: 25px;
-      margin-left: 25px;
-    }
-
-    &:nth-child(4) {
-      background-image:
-        url("../img/arrow.png"),
-        url("../img/light-desktop.png");
-      margin-left: 5px;
-    }
+    padding-bottom: 73px;
+    margin-top: 55px;
   }
 
   .goods__header {
-    width: 80%;
-    font-size: 36px;
-    line-height: 51px;
-    margin-left: 19.5%;
-    margin-top: 37px;
-    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 40px;
   }
 
   .goods__text {
-    margin-left: 43px;
-    margin-top: 53px;
+    margin-left: 35px;
+    margin-top: 25px;
   }
 }
