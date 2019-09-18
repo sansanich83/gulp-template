@@ -8,6 +8,7 @@
   <meta name="Description" content="Author: Liga A Category: test">
   <title>smart device</title>
   <link href="css/style.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <a aria-label="ссылка на главный экран" class="header__logotype-a" href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" />
-            <img class="header__logotype-img" src="./img/logo-mobile.svg" width="38" height="38" alt="умный девайс" />
+            <img src="./img/logo-mobile.svg" width="38" height="38" alt="умный девайс" />
           </picture>
         </a>
       </div>
@@ -27,14 +28,15 @@
           <span class="header__nav-menu-span"></span>
           <span class="header__nav-menu-span"></span>
         </button>
-        <a aria-label="написать письмо" class="header__email header__connect-type" href="mailto:someone@yoursite.com">
-          <img class="header__connect-type-img header__connect-type-img--mail" height="24" src="./img/envelope.svg"
-            alt="написать емэйл">
+        <a class="header__connect-type-img header__connect-type-img--mail header__email header__connect-type"
+          aria-label="написать письмо" href="mailto:someone@yoursite.com">
+          <img height="24" src="./img/envelope.svg" alt="написать емэйл">
           <span class="header__controls-info">info@sd.ru</span>
         </a>
-        <a aria-label="набрать телефонный номер" class="header__phone header__connect-type" href="tel:+78142332211"><img
-            class="header__connect-type-img header__connect-type-img--phone" height="24" src="./img/phone-call.svg"
-            alt="набрать телефонный номер">
+        <a aria-label="набрать телефонный номер"
+          class="header__connect-type-img header__connect-type-img--phone header__phone header__connect-type"
+          href="tel:+78142332211">
+          <img height="24" src="./img/phone-call.svg" alt="набрать телефонный номер">
           <span class="header__controls-info">+7 (495) 000 52 52</span>
         </a>
         <button type="submit" class="header__callback">Заказать звонок</button>
@@ -48,8 +50,8 @@
       <h1 class="main-screen__title">Печатные платы</h1>
       <p class="main-screen__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <button aria-label="Получить бесплатную консультацию" type="button" class="main-screen__button"><span
-          class="main-screen__button--desktop">Получить бесплатную
-          консультацию</span> <span class="main-screen__button--mobile">Бесплатная консультация</span></button>
+          class="main-screen__button-text main-screen__button-text--desktop">Получить бесплатную
+          консультацию</span> <span class="main-screen__button-text main-screen__button-text--mobile">Бесплатная консультация</span></button>
       <a aria-label="скрол вниз" class="main-screen__scroll" href="#">скрол вниз</a>
     </div>
   </section>
@@ -59,23 +61,23 @@
     <section class="advantages">
       <div class="advantages__item-wrapper">
         <h2 class="advantages__header">Преимущества</h2>
-        <div class="advantages__item">
+        <div class="advantages__item advantages__item--stopwatch">
           <h3 class="advantages__title">Оперативные сроки</h3>
           <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
             производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </div>
-        <div class="advantages__item">
+        <div class="advantages__item advantages__item--hired">
           <h3 class="advantages__title">Крупные поставщики</h3>
           <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
           </p>
         </div>
-        <div class="advantages__item">
+        <div class="advantages__item advantages__item--detective">
           <h3 class="advantages__title">Полная конфиденциальность</h3>
           <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.
           </p>
         </div>
-        <div class="advantages__item">
+        <div class="advantages__item advantages__item--tag">
           <h3 class="advantages__title">Персонализация стоимости</h3>
           <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
             цену, которая Вас
@@ -105,13 +107,13 @@
   <section class="goods">
     <div class="goods__wrapper">
       <h2 class="goods__header">Service Device предлагает следующие товары и услуги </h2>
-      <a aria-label="Производство печатных плат" class="goods__item" href="#">
+      <a aria-label="Производство печатных плат" class="goods__item goods__item--produce" href="#">
         <span class="goods__text">Производство печатных плат</span>
       </a>
-      <a aria-label="Монтаж печатных плат" class="goods__item" href="#">
+      <a aria-label="Монтаж печатных плат" class="goods__item goods__item--mount" href="#">
         <span class="goods__text">Монтаж печатных плат</span>
       </a>
-      <a aria-label="Комплектующие для светотехники" class="goods__item" href="#">
+      <a aria-label="Комплектующие для светотехники" class="goods__item goods__item--light" href="#">
         <span class="goods__text">Комплектующие для светотехники</span>
       </a>
     </div>
@@ -148,7 +150,7 @@
               <div class="feedback__form-agreement">
                 <div class="feedback__form-agreement-checkbox">
                   <input aria-label="согласие на обработку данных" checked type="checkbox" id="footer-agreement">
-                  <label for="footer-agreement">Я согласен на обработку персональных
+                  <label class="feedback__form-agreement-checkbox-label" for="footer-agreement">Я согласен на обработку персональных
                     данных</label>
                 </div>
               </div>
@@ -164,14 +166,14 @@
 
         <div class="contacts__container">
           <div class="contacts__logo">
-            <img class="contacts__logo-img" src="./img/logo-footer.svg" alt="Логотип компании">
+            <img src="./img/logo-footer.svg" width="216" height="55" alt="Логотип компании">
             <ul class="contacts__social">
               <li><a aria-label="наша страница на фэйсбук" class="contacts__social-item" href="facebook.com"><img
-                    src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
+                    src="./img/fb-icon.svg" width="27" height="27" alt="значок фэйсбук"></a></li>
               <li><a aria-label="наша страница на одноклассники" class="contacts__social-item" href="ok.com"><img
-                    src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
+                    src="./img/ok-icon.svg" width="27" height="27" alt="значок одноклассники"></a></li>
               <li><a aria-label="наша страница на вконтакте" class="contacts__social-item" href="vk.com"><img
-                    src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
+                    src="./img/vk-icon.svg" width="27" height="27" alt="значок вконтакте"></a></li>
             </ul>
           </div>
 
@@ -179,8 +181,8 @@
             <div class="contacts__section contacts__links-wrapper">
               <div class="contacts__title-wrapper">
                 <h3 class="contacts__title">Разделы сайта</h3>
-                <button type="button" class="contacts__section-button"><img src="./img/plus-icon.svg"
-                    alt="раскрыть разделы сайта"></button>
+                <button type="button" class="contacts__section-button"><img src="./img/plus-icon.svg" width="16"
+                    height="16" alt="раскрыть разделы сайта"></button>
               </div>
               <ul class="contacts__links">
                 <li><a aria-label="ссылка на раздел О компании" class="contacts__links-item" href="#">О компании</a>
@@ -202,8 +204,8 @@
           <div class="contacts__section contacts__adress">
             <div class="contacts__title-wrapper">
               <h3 class="contacts__title">Наш офис</h3>
-              <button type="button" class="contacts__section-button"><img src="./img/minus-icon.svg"
-                  alt="раскрыть адрес офиса"></button>
+              <button type="button" class="contacts__section-button"><img src="./img/minus-icon.svg" width="16"
+                  height="2" alt="раскрыть адрес офиса"></button>
             </div>
             <div class="contacts__adress-list">
               <p>г. Мытищи, Олимпийский проспект, д.10</p>
@@ -238,7 +240,8 @@
       <div class="feedback__ask-wrapper--popup feedback__ask-wrapper">
         <h2 class="feedback__ask-header--popup feedback__ask-header">Закажите звонок</h2>
         <button aria-label="Закрыть заказ звонка" type="button" class="feedback__close-button"></button>
-        <p class="feedback__ask-text feedback__ask-text--popup">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <p class="feedback__ask-text feedback__ask-text--popup">Оставьте контакты, мы проконсультируем вас бесплатно в
+          удобное время</p>
 
         <form class="feedback__form" action="https://echo.htmlacademy.ru">
           <div class="feedback__form-field--popup-input feedback__form-field feedback__form-field--input">
@@ -254,7 +257,7 @@
             <div class="feedback__form-agreement">
               <div class="feedback__form-agreement-ckeckbox feedback__form-agreement-ckeckbox--popup">
                 <input aria-label="согласие на обработку данных" checked type="checkbox" id="popup-agreement">
-                <label for="popup-agreement">Я согласен на
+                <label class="feedback__form-agreement-checkbox-label feedback__form-agreement-checkbox-label--popup" for="popup-agreement">Я согласен на
                   обработку
                   персональных данных</label>
               </div>

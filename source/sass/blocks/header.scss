@@ -5,6 +5,11 @@
   margin: 0 auto;
   display: flex;
   padding-top: 17px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    position: relative;
+    z-index: 10;
+  }
 }
 
 .header__container {
@@ -44,6 +49,10 @@
   :focus {
     @include standard-hover;
   }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    margin-right: 0;
+  }
 }
 
 .header__logotype {
@@ -54,7 +63,7 @@
   margin-left: -25px;
 }
 
-.header__logotype-img {
+.header__logotype img {
   width: 202px;
   height: 52px;
 }
@@ -103,12 +112,12 @@
   }
 }
 
-.header__connect-type-img {
+.header__connect-type-img img {
   transform: translateY(7px);
   margin-right: 10px;
 }
 
-.header__connect-type-img--mail {
+.header__connect-type-img--mail img {
   transform: scale(0.7) translateY(7px);
   transform-origin: 100% 100%;
 }
@@ -149,12 +158,16 @@
     padding-top: 3px;
   }
 
-  .header__logotype-img {
+  .header__logotype img {
     margin-left: 25px;
   }
 
   .header__controls {
     width: auto;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 90%;
+    }
   }
 
   .header__connect-type {
@@ -185,7 +198,7 @@
     box-sizing: border-box;
   }
 
-  .header__logotype-img {
+  .header__logotype img {
     width: 38px;
     height: 38px;
   }
@@ -200,11 +213,11 @@
     margin-top: -3px;
   }
 
-  .header__connect-type-img {
+  .header__connect-type-img img {
     margin-right: 0;
   }
 
-  .header__connect-type-img--mail {
+  .header__connect-type-img--mail img {
     transform: scale(0.8) translateY(7px);
   }
 }

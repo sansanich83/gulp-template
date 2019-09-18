@@ -54,10 +54,6 @@
   margin-top: 15px;
   margin-bottom: 15px;
   width: 426px;
-
-  &:nth-child(1) {
-    margin-right: 0;
-  }
 }
 
 .feedback__form-field--popup-textarea textarea {
@@ -80,7 +76,7 @@
   width: 94%;
 }
 
-.feedback__form-agreement-ckeckbox--popup label {
+.feedback__form-agreement-checkbox-label--popup {
   width: 85%;
   margin-left: 51px;
   margin-top: -20px;
@@ -88,6 +84,14 @@
   &::before {
     left: -47px;
   }
+}
+
+.feedback__form-agreement-ckeckbox--popup input:checked + .feedback__form-agreement-checkbox-label--popup::before {
+  background-image: url("../img/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: 9px 9px;
 }
 
 .feedback__close-button {
@@ -98,8 +102,9 @@
   height: 19px;
   background-color: #00b2ff;
   border: none;
-  background-image: url("../img/close.png");
+  background-image: url("../img/close@1x.webp");
   background-repeat: no-repeat;
+  background-size: 20px 20px;
 
   &:hover,
   :focus {

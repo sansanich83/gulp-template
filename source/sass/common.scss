@@ -13,6 +13,10 @@
   outline-style: auto;
   outline-width: 5px;
   cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    box-shadow: 0 0 0 2px #00b2ff inset, 0 0 0 4px white inset;
+  }
 }
 
 @mixin light-hover {
@@ -23,6 +27,10 @@
   color: #00b2ff;
   background-color: #ffffff;
   cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    box-shadow: 0 0 0 2px #00b2ff inset, 0 0 0 4px white inset;
+  }
 }
 
 .visually-hidden {

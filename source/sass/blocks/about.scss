@@ -24,12 +24,18 @@
     top: 328px;
     width: 198px;
     height: 325px;
-    background-image: url("../img/2005@1x.png");
+    background-image: url("../img/2005@1x.webp");
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      background-image: url("../img/2005@1x.png");
+    }
+
+    background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/2005@2x.png");
+      background-image: url("../img/2005@2x.webp");
       background-size: 170px 325px;
     }
   }
@@ -104,12 +110,18 @@
       top: 359px;
       width: 179px;
       height: 357px;
-      background-image: url("../img/2005@1x.png");
+      background-image: url("../img/2005@1x.webp");
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background-image: url("../img/2005@1x.png");
+      }
+
+      background-color: transparent;
       background-size: contain;
       background-repeat: no-repeat;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/2005@2x.png");
+        background-image: url("../img/2005@2x.webp");
         background-size: 170px 362px;
       }
     }

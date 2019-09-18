@@ -1,11 +1,15 @@
 .feedback {
-  background-image: url("../img/form-bg.png");
+  background-image: url("../img/form-bg@1x.png");
   background-repeat: no-repeat;
   background-position-y: -48px;
   background-position-x: 35%;
   background-size: 96%;
   background-color: #00b2ff;
   padding-bottom: 88px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/form-bg@2x.png");
+  }
 }
 
 .feedback__header {
@@ -132,7 +136,7 @@
   width: 100%;
 }
 
-.feedback__form-agreement-checkbox label {
+.feedback__form-agreement-checkbox-label {
   font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
@@ -169,10 +173,12 @@
   @include visually-hidden;
 }
 
-.feedback__form-agreement-checkbox input:checked + .feedback__form-agreement-checkbox label::before {
+.feedback__form-agreement-checkbox input:checked + .feedback__form-agreement-checkbox-label::before {
   background-image: url("../img/vector.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  background-size: 9px 9px;
 }
 
 @media (max-width: 1023px) {
@@ -206,7 +212,7 @@
     margin-bottom: 44px;
   }
 
-  .feedback__form-agreement-checkbox label {
+  .feedback__form-agreement-checkbox-label {
     margin-top: 5px;
     margin-right: 9px;
   }
