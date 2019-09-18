@@ -23,10 +23,10 @@
         </a>
       </div>
       <div class="header__controls">
-        <nav class="header__nav-menu">
+        <button aria-label="открыть меню" type="button" class="header__nav-menu">
           <span class="header__nav-menu-span"></span>
           <span class="header__nav-menu-span"></span>
-        </nav>
+        </button>
         <a aria-label="написать письмо" class="header__email header__connect-type" href="mailto:someone@yoursite.com">
           <img class="header__connect-type-img header__connect-type-img--mail" height="24" src="./img/envelope.svg"
             alt="написать емэйл">
@@ -123,30 +123,38 @@
       <h2 class="feedback__header">Обратная связь</h2>
 
       <div class="feedback__ask">
+
         <div class="feedback__ask-wrapper">
+
           <h3 class="feedback__ask-header">Остались вопросы? <br>
             Задайте их нам!
           </h3>
           <p class="feedback__ask-text">Мы проконсультируем Вас бесплатно</p>
+
           <form class="feedback__form" action="https://echo.htmlacademy.ru">
+
+
             <div class="feedback__form-field feedback__form-field--input">
               <input aria-label="ввод имени" type="text" placeholder="Имя">
               <input aria-label="ввод телефона" type="number" placeholder="Телефон">
             </div>
+
             <div class="feedback__form-field feedback__form-field--textarea">
               <textarea aria-label="ввод вопроса" placeholder="Ваш вопрос"></textarea>
             </div>
+
             <div class="feedback__form-buttons">
               <button aria-label="отправить вопрос" type="submit" class="feedback__form-button">Задать вопрос</button>
               <div class="feedback__form-agreement">
                 <div class="feedback__form-agreement-checkbox">
-                  <input checked type="checkbox" id="footer-agreement">
+                  <input aria-label="согласие на обработку данных" checked type="checkbox" id="footer-agreement">
                   <label for="footer-agreement">Я согласен на обработку персональных
                     данных</label>
                 </div>
               </div>
             </div>
           </form>
+
         </div>
       </div>
     </div>
@@ -154,64 +162,69 @@
     <div class="contacts">
       <div class="contacts__wrapper">
 
-        <div class="contacts__logo">
-          <img class="contacts__logo-img" src="./img/logo-footer.svg" alt="Логотип компании">
-          <div class="contacts__logo-rights rights">
-            <span class="contacts__logo-copyright rights__text">Все права защищены</span>
-            <span class="contacts__logo-copyright rights__trade-mark">1999-2018 SD Service Devices</span>
-          </div>
-          <ul class="contacts__social">
-            <li><a aria-label="наша страница на фэйсбук" class="contacts__social-item" href="facebook.com"><img
-                  src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
-            <li><a aria-label="наша страница на одноклассники" class="contacts__social-item" href="ok.com"><img
-                  src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
-            <li><a aria-label="наша страница на вконтакте" class="contacts__social-item" href="vk.com"><img
-                  src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
-          </ul>
-        </div>
-
-        <div class="contacts__section-wrapper">
-          <div class="contacts__section contacts__links-wrapper">
-            <div class="contacts__title-wrapper">
-              <h3 class="contacts__title">Разделы сайта</h3>
-              <button type="button" class="contacts__section-button"><img src="./img/plus-icon.svg"
-                  alt="раскрыть разделы сайта"></button>
-            </div>
-            <ul class="contacts__links">
-              <li><a aria-label="ссылка на раздел О компании" class="contacts__links-item" href="#">О компании</a></li>
-              <li><a aria-label="ссылка на раздел Продукты" class="contacts__links-item" href="#">Продукты</a></li>
-              <li><a aria-label="ссылка на раздел Производство печатных плат" class="contacts__links-item"
-                  href="#">Производство печатных плат</a></li>
-              <li><a aria-label="ссылка на раздел Монтаж печатных плат" class="contacts__links-item" href="#">Монтаж
-                  печатных плат</a></li>
-              <li><a aria-label="ссылка на раздел Комплектующие" class="contacts__links-item" href="#">Комплектующие</a>
-              </li>
-              <li><a aria-label="ссылка на раздел Доставка" class="contacts__links-item" href="#">Доставка</a></li>
-              <li><a aria-label="ссылка на раздел Контакты" class="contacts__links-item" href="#">Контакты</a></li>
+        <div class="contacts__container">
+          <div class="contacts__logo">
+            <img class="contacts__logo-img" src="./img/logo-footer.svg" alt="Логотип компании">
+            <ul class="contacts__social">
+              <li><a aria-label="наша страница на фэйсбук" class="contacts__social-item" href="facebook.com"><img
+                    src="./img/fb-icon.svg" alt="значок фэйсбук"></a></li>
+              <li><a aria-label="наша страница на одноклассники" class="contacts__social-item" href="ok.com"><img
+                    src="./img/ok-icon.svg" alt="значок одноклассники"></a></li>
+              <li><a aria-label="наша страница на вконтакте" class="contacts__social-item" href="vk.com"><img
+                    src="./img/vk-icon.svg" alt="значок вконтакте"></a></li>
             </ul>
           </div>
-        </div>
 
-        <div class="contacts__section contacts__adress">
-          <div class="contacts__title-wrapper">
-            <h3 class="contacts__title">Наш офис</h3>
-            <button type="button" class="contacts__section-button"><img src="./img/minus-icon.svg"
-                alt="раскрыть адрес офиса"></button>
+          <div class="contacts__section-wrapper">
+            <div class="contacts__section contacts__links-wrapper">
+              <div class="contacts__title-wrapper">
+                <h3 class="contacts__title">Разделы сайта</h3>
+                <button type="button" class="contacts__section-button"><img src="./img/plus-icon.svg"
+                    alt="раскрыть разделы сайта"></button>
+              </div>
+              <ul class="contacts__links">
+                <li><a aria-label="ссылка на раздел О компании" class="contacts__links-item" href="#">О компании</a>
+                </li>
+                <li><a aria-label="ссылка на раздел Продукты" class="contacts__links-item" href="#">Продукты</a></li>
+                <li><a aria-label="ссылка на раздел Производство печатных плат" class="contacts__links-item"
+                    href="#">Производство печатных плат</a></li>
+                <li><a aria-label="ссылка на раздел Монтаж печатных плат" class="contacts__links-item" href="#">Монтаж
+                    печатных плат</a></li>
+                <li><a aria-label="ссылка на раздел Комплектующие" class="contacts__links-item"
+                    href="#">Комплектующие</a>
+                </li>
+                <li><a aria-label="ссылка на раздел Доставка" class="contacts__links-item" href="#">Доставка</a></li>
+                <li><a aria-label="ссылка на раздел Контакты" class="contacts__links-item" href="#">Контакты</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="contacts__adress-list">
-            <p>г. Мытищи, Олимпийский проспект, д.10</p>
-            <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
-            <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
+
+          <div class="contacts__section contacts__adress">
+            <div class="contacts__title-wrapper">
+              <h3 class="contacts__title">Наш офис</h3>
+              <button type="button" class="contacts__section-button"><img src="./img/minus-icon.svg"
+                  alt="раскрыть адрес офиса"></button>
+            </div>
+            <div class="contacts__adress-list">
+              <p>г. Мытищи, Олимпийский проспект, д.10</p>
+              <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
+              <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
+            </div>
           </div>
+
         </div>
-
-
-
 
         <div class="contacts__copyright">
-          <span class="contacts__copyright-text">Условия конфеденциальности</span>
-          <span class="contacts__copyright-text">Developed by wow studio</span>
+          <div class="contacts__copyright-wrapper">
+            <div class="contacts__logo-rights">
+              <span class="contacts__logo-copyright contacts__logo-copyright--desktop">Все права защищены</span>
+              <span class="contacts__logo-copyright contacts__logo-copyright--tablet">1999-2018 SD Service
+                Devices</span>
+            </div>
+            <span class="contacts__copyright-text contacts__copyright-text--terms">Условия конфеденциальности</span>
+            <span class="contacts__copyright-text contacts__copyright-text--right">Developed by wow studio</span>
+          </div>
         </div>
 
       </div>
@@ -225,22 +238,30 @@
       <div class="feedback__ask-wrapper--popup feedback__ask-wrapper">
         <h2 class="feedback__ask-header--popup feedback__ask-header">Закажите звонок</h2>
         <button aria-label="Закрыть заказ звонка" type="button" class="feedback__close-button"></button>
-        <p class="feedback__ask-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <p class="feedback__ask-text feedback__ask-text--popup">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
         <form class="feedback__form" action="https://echo.htmlacademy.ru">
-          <input class="feedback__form-field--popup-input feedback__form-field feedback__form-field--input" type="text"
-            placeholder="Имя">
-          <input class="feedback__form-field--popup-input feedback__form-field feedback__form-field--input"
-            type="number" placeholder="Телефон">
-          <textarea class="feedback__form-field--popup-textarea feedback__form-field feedback__form-field--textarea"
-            placeholder="Ваш вопрос"></textarea>
-          <button type="submit" class="feedback__form-button--popup feedback__form-button">Отправить</button>
-          <div class="feedback__form-agreement">
-            <input class="feedback__form-agreement-input" checked type="checkbox" id="popup-agreement">
-            <label class="feedback__form-label--popup feedback__form-label" for="popup-agreement">Я согласен на
-              обработку
-              персональных данных</label>
+          <div class="feedback__form-field--popup-input feedback__form-field feedback__form-field--input">
+            <input aria-label="ввод имени" type="text" placeholder="Имя">
+            <input aria-label="ввод телефона" type="number" placeholder="Телефон">
+          </div>
+          <div class="feedback__form-field--popup-textarea feedback__form-field feedback__form-field--textarea">
+            <textarea aria-label="ввод вопроса" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="feedback__form-buttons feedback__form-buttons--popup">
+            <button aria-label="отправить вопрос" type="submit"
+              class="feedback__form-button--popup feedback__form-button">Отправить</button>
+            <div class="feedback__form-agreement">
+              <div class="feedback__form-agreement-ckeckbox feedback__form-agreement-ckeckbox--popup">
+                <input aria-label="согласие на обработку данных" checked type="checkbox" id="popup-agreement">
+                <label for="popup-agreement">Я согласен на
+                  обработку
+                  персональных данных</label>
+              </div>
+            </div>
           </div>
         </form>
+
       </div>
     </div>
   </div>

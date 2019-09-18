@@ -1,9 +1,9 @@
 .feedback {
   background-image: url("../img/form-bg.png");
   background-repeat: no-repeat;
-  background-position-y: -60px;
-  background-position-x: right 70%;
-  background-size: 90%;
+  background-position-y: -48px;
+  background-position-x: 35%;
+  background-size: 96%;
   background-color: #00b2ff;
   padding-bottom: 88px;
 }
@@ -198,11 +198,17 @@
     font-size: 32px;
     line-height: 140.62%;
     margin-top: 0;
+    padding-top: 86px;
   }
 
   .feedback__form-field--textarea textarea {
     margin-top: 10px;
     margin-bottom: 44px;
+  }
+
+  .feedback__form-agreement-checkbox label {
+    margin-top: 5px;
+    margin-right: 9px;
   }
 }
 

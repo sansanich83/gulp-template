@@ -31,24 +31,50 @@
 
   &:nth-child(2) {
     background-image:
-      url("../img/arrow.png"),
-      url("../img/produce-desktop.png");
+      url("../img/arrow@1x.png"),
+      url("../img/produce-desktop@1x.png");
     margin-right: 5px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image:
+        url("../img/arrow@2x.png"),
+        url("../img/produce-desktop@2x.png");
+      background-size: 63px 63px, cover;
+    }
   }
 
   &:nth-child(3) {
     background-image:
-      url("../img/arrow.png"),
-      url("../img/mount-desktop.png");
+      url("../img/arrow@1x.png"),
+      url("../img/mount-desktop@1x.png");
     margin-right: 15px;
     margin-left: 15px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image:
+        url("../img/arrow@2x.png"),
+        url("../img/mount-desktop@2x.png");
+      background-size: 63px 63px, cover;
+    }
   }
 
   &:nth-child(4) {
     background-image:
-      url("../img/arrow.png"),
-      url("../img/light-desktop.png");
+      url("../img/arrow@1x.png"),
+      url("../img/light-desktop@1x.png");
     margin-left: 5px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image:
+        url("../img/arrow@2x.png"),
+        url("../img/light-desktop@2x.png");
+      background-size: 63px 63px, cover;
+    }
+  }
+
+  &:hover,
+  :focus {
+    @include standard-hover;
   }
 }
 
@@ -90,8 +116,7 @@
     padding-right: 0;
     padding-left: 5px;
     max-width: 720px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: -5px auto 34px;
     width: auto;
   }
 
@@ -105,7 +130,7 @@
     display: block;
     box-sizing: border-box;
     max-width: 720px;
-    min-height: 256px;
+    min-height: 246px;
     background-repeat: no-repeat;
     background-position-x: right, center;
     background-position-y: bottom, center;
@@ -118,27 +143,47 @@
 
     &:nth-child(2) {
       background-image:
-        url("../img/arrow.png"),
-        url("../img/produce-tablet.png");
-      margin: 0 auto;
-      margin-bottom: 45px;
+        url("../img/arrow@1x.png"),
+        url("../img/produce-tablet@1x.png");
+      margin: 0 auto 74px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image:
+          url("../img/arrow@2x.png"),
+          url("../img/produce-tablet@2x.png");
+        background-size: 63px 63px, cover;
+      }
     }
 
     &:nth-child(3) {
       background-image:
-        url("../img/arrow.png"),
-        url("../img/mount-tablet.png");
+        url("../img/arrow@1x.png"),
+        url("../img/mount-tablet@1x.png");
       margin: 0 auto;
       margin-bottom: 45px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image:
+          url("../img/arrow@2x.png"),
+          url("../img/mount-tablet@2x.png");
+        background-size: 63px 63px, cover;
+      }
     }
 
 
     &:nth-child(4) {
       background-image:
-        url("../img/arrow.png"),
-        url("../img/light-tablet.png");
+        url("../img/arrow@1x.png"),
+        url("../img/light-tablet@1x.png");
       margin: 0 auto;
       margin-bottom: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image:
+          url("../img/arrow@2x.png"),
+          url("../img/light-tablet@2x.png");
+        background-size: 63px 63px, cover;
+      }
     }
   }
 
@@ -150,8 +195,12 @@
 
 @media (max-width: 767px) {
   .goods {
-    padding-bottom: 73px;
+    padding-bottom: 65px;
     margin-top: 55px;
+  }
+
+  .goods__item:nth-child(3) {
+    margin: 0 auto 19px;
   }
 
   .goods__header {

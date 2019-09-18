@@ -34,9 +34,11 @@
 }
 
 .header__nav-menu {
-  margin-top: 16px;
+  margin-top: -4px;
   margin-right: auto;
-  margin-left: 5%;
+  margin-left: 8%;
+  background-color: transparent;
+  border: none;
 
   &:hover,
   :focus {
@@ -46,9 +48,10 @@
 
 .header__logotype {
   box-sizing: border-box;
-  padding-left: 25px;
   padding-top: 15px;
   width: 256px;
+  padding-left: 25px;
+  margin-left: -25px;
 }
 
 .header__logotype-img {
@@ -57,8 +60,7 @@
 }
 
 .header__controls {
-  width: 100%;
-  padding-right: 25px;
+  width: 90%;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
@@ -91,8 +93,8 @@
 }
 
 .header__connect-type {
-  margin-left: 3%;
-  margin-right: 1.5%;
+  margin-left: 3.8%;
+  margin-right: 41px;
   margin-top: 8px;
 
   &:hover,
@@ -147,16 +149,24 @@
     padding-top: 3px;
   }
 
+  .header__logotype-img {
+    margin-left: 25px;
+  }
+
   .header__controls {
     width: auto;
   }
 
   .header__connect-type {
     width: auto;
+    margin-left: 6.8%;
+    margin-right: 15px;
+    margin-top: -7px;
   }
 
   .header__nav-menu {
     margin-left: 0;
+    margin-top: -36px;
   }
 }
 
@@ -166,8 +176,8 @@
   }
 
   .header__nav-menu {
-    margin-right: 5px;
-    margin-top: 5px;
+    margin-right: -1px;
+    margin-top: -10px;
   }
 
   .header__logotype {
@@ -186,8 +196,8 @@
 
   .header__connect-type {
     margin-left: 15px;
-    margin-right: 0;
-    margin-top: -5px;
+    margin-right: 12px;
+    margin-top: -3px;
   }
 
   .header__connect-type-img {

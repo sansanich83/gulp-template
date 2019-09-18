@@ -1,7 +1,7 @@
 .main-screen {
   background-image:
-    url("../img/main-bg2-desktop.png"),
-    url("../img/main-bg-desktop.png");
+    url("../img/main-bg2-desktop@1x.png"),
+    url("../img/main-bg-desktop@1x.png");
   background-position-x: 54vw, 0;
   background-position-y: 254px, 0;
   background-size: auto, cover;
@@ -11,6 +11,13 @@
   background-repeat: no-repeat;
   width: 100%;
   color: #ffffff;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image:
+      url("../img/main-bg2-desktop@2x.png"),
+      url("../img/main-bg-desktop@2x.png");
+    background-size: 705px 515px, cover;
+  }
 }
 
 .main-screen__container {
@@ -19,7 +26,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
   box-sizing: border-box;
 }
 
@@ -33,8 +39,11 @@
   text-transform: uppercase;
   color: #ffffff;
   width: 718px;
-  padding-top: 315px;
-  margin-top: 0;
+  padding-top: 212px;
+  margin-top: 102px;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  margin-left: -25px;
 }
 
 .main-screen__slogan {
@@ -46,7 +55,8 @@
   width: 683px;
   margin-bottom: 44px;
   color: #ffffff;
-  margin-left: 94px;
+  margin-left: 70px;
+  padding-left: 25px;
 
   &::before {
     width: 63px;
@@ -95,7 +105,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left: -40px;
   transform: rotate(-90deg);
   width: 93px;
@@ -108,16 +118,27 @@
   }
 }
 
+.main-screen__button--mobile {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .main-screen {
     background-image:
-      url("../img/main-bg2-tablet.png"),
-      url("../img/main-bg-tablet.png");
+      url("../img/main-bg2-tablet@1x.png"),
+      url("../img/main-bg-tablet@1x.png");
     background-position-x: 66vw, -372px;
     background-position-y: 127px, 0;
     background-size: auto, cover;
     min-height: 686px;
     margin-top: -85px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image:
+        url("../img/main-bg2-tablet@2x.png"),
+        url("../img/main-bg-tablet@2x.png");
+      background-size: 465px 340px, cover;
+    }
   }
 
   .main-screen__title {
@@ -125,9 +146,9 @@
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.07em;
-    padding-top: 189px;
+    padding-top: 87px;
     margin-bottom: 17px;
-    margin-left: 65px;
+    margin-left: 88px;
   }
 
   .main-screen__slogan {
@@ -136,7 +157,7 @@
     line-height: 156.8%;
     margin-top: 10px;
     margin-bottom: 55px;
-    margin-left: 115px;
+    margin-left: 139px;
 
     &::before {
       left: -50px;
@@ -149,16 +170,13 @@
     margin-top: 0;
     width: 379px;
     min-height: 55px;
-    margin-left: 115px;
+    margin-left: 139px;
   }
 
   .main-screen__button--desktop {
     display: inline-block;
   }
 
-  .main-screen__button--mobile {
-    display: none;
-  }
 
   .main-screen__scroll {
     display: none;
@@ -168,12 +186,19 @@
 @media (max-width: 767px) {
   .main-screen {
     background-image:
-      url("../img/main-bg2-mobile.png"),
-      url("../img/main-bg-mobile.png");
+      url("../img/main-bg2-mobile@x1.png"),
+      url("../img/main-bg-mobile@x1.png");
     background-position-x: right, -624px;
     background-position-y: 92px, 0;
     min-height: 647px;
     margin-top: -55px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image:
+        url("../img/main-bg2-mobile@2x.png"),
+        url("../img/main-bg-mobile@2x.png");
+      background-size: 301px 220px, cover;
+    }
   }
 
   .main-screen__container {
@@ -187,8 +212,8 @@
     text-transform: uppercase;
     font-weight: bold;
     font-family: $main-font;
-    margin-left: 4vw;
-    padding-top: 284px;
+    padding-top: 186px;
+    margin-left: -10px;
     width: 250px;
     margin-bottom: 19px;
   }
@@ -200,7 +225,8 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 156.8%;
-    margin-left: 66px;
+    margin-left: 43px;
+    margin-top: 6px;
     margin-bottom: 42px;
 
     &::before {

@@ -25,6 +25,10 @@
   padding-left: 35px;
 }
 
+.feedback__ask-text--popup {
+  margin-bottom: 20px;
+}
+
 .feedback__ask-wrapper--popup {
   width: 100%;
   margin-top: 0;
@@ -38,9 +42,15 @@
   font-size: 28px;
   line-height: 140.62%;
   color: #ffffff;
+  padding-top: 13px;
 }
 
 .feedback__form-field--popup-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__form-field--popup-input input {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 426px;
@@ -50,16 +60,27 @@
   }
 }
 
-.feedback__form-field--popup-textarea {
+.feedback__form-field--popup-textarea textarea {
   height: 100px;
   margin-top: 16px;
+  margin-right: 25px;
+  width: 426px;
+}
+
+.feedback__form-buttons--popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__form-agreement-ckeckbox--popup input {
+  display: none;
 }
 
 .feedback__form-button--popup {
   width: 94%;
 }
 
-.feedback__form-label--popup {
+.feedback__form-agreement-ckeckbox--popup label {
   width: 85%;
   margin-left: 51px;
   margin-top: -20px;
@@ -71,8 +92,8 @@
 
 .feedback__close-button {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 20px;
+  top: 20px;
   width: 19px;
   height: 19px;
   background-color: #00b2ff;
