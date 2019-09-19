@@ -28,6 +28,7 @@
   width: 31.1%;
   max-width: 370px;
   min-height: 620px;
+  margin: 30px auto 0;
 
   &--produce {
     background-image:
@@ -40,7 +41,6 @@
         url("../img/produce-desktop@1x.png");
     }
 
-    margin-right: 5px;
     background-color: #1b2d37;
     background-size: 63px 63px, cover;
 
@@ -62,8 +62,6 @@
         url("../img/mount-desktop@1x.png");
     }
 
-    margin-right: 15px;
-    margin-left: 15px;
     background-color: #1b2d37;
     background-size: 63px 63px, cover;
 
@@ -86,7 +84,6 @@
         url("../img/light-desktop@1x.png");
     }
 
-    margin-left: 5px;
     background-color: #1b2d37;
     background-size: 63px 63px, cover;
 
@@ -122,7 +119,7 @@
   font-size: 36px;
   line-height: 51px;
   margin-top: 37px;
-  margin-bottom: 52px;
+  margin-bottom: 19px;
   margin-left: 0;
   font-family: $main-font;
   font-style: normal;
@@ -142,7 +139,7 @@
     padding-right: 0;
     padding-left: 5px;
     max-width: 720px;
-    margin: -5px auto 34px;
+    margin: -5px auto 1px;
     width: auto;
   }
 
@@ -161,6 +158,7 @@
     background-position-x: right, center;
     background-position-y: bottom, center;
     border: 1px solid transparent;
+    margin: 50px auto 0;
 
     &:hover,
     :focus {
@@ -178,7 +176,6 @@
           url("../img/produce-tablet@1x.png");
       }
 
-      margin: 0 auto 74px;
       background-color: #1b2d37;
       background-size: 63px 63px, cover;
 
@@ -201,8 +198,6 @@
           url("../img/mount-tablet@1x.png");
       }
 
-      margin: 0 auto;
-      margin-bottom: 45px;
       background-color: #1b2d37;
       background-size: 63px 63px, cover;
 
@@ -226,8 +221,6 @@
           url("../img/light-tablet@1x.png");
       }
 
-      margin: 0 auto;
-      margin-bottom: 0;
       background-color: #1b2d37;
       background-size: 63px 63px, cover;
 
@@ -242,7 +235,7 @@
 
   .goods__text {
     margin-left: 45px;
-    margin-top: 45px;
+    margin-top: 38px;
   }
 }
 
@@ -250,6 +243,10 @@
   .goods {
     padding-bottom: 65px;
     margin-top: 55px;
+  }
+
+  .goods__item {
+    margin: 30px auto 0;
   }
 
   .goods__header {

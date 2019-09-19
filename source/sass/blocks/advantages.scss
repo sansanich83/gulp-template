@@ -70,6 +70,14 @@
     background-size: contain;
   }
 
+  &--hired {
+    margin-left: 33px;
+
+    @media (max-width: 1200px) {
+      margin-left: 25px;
+    }
+  }
+
   &--hired::before {
     content: "";
     display: block;
@@ -133,6 +141,10 @@
     min-height: 230px;
     padding-top: 20px;
     margin: 12px 0;
+  }
+
+  .advantages__item--hired {
+    margin-left: 20px;
   }
 
   .advantages__title {
