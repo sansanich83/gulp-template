@@ -11,9 +11,9 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   max-width: 1213px;
   margin: 0 auto;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -25,10 +25,15 @@
   color: white;
   display: block;
   box-sizing: border-box;
-  width: 31.1%;
+  width: 31.011%;
   max-width: 370px;
   min-height: 620px;
-  margin: 30px auto 0;
+  margin: 30px 1.161% 0;
+
+  &:last-child {
+
+    margin-right: auto;
+  }
 
   &--produce {
     background-image:

@@ -20,8 +20,8 @@
   flex-direction: row;
 }
 
-.header__logotype-a:hover,
-.header__logotype-a:focus {
+.header__logotype img:hover,
+.header__logotype img:focus {
   @include standard-hover;
 }
 

@@ -169,7 +169,9 @@
 
 .contacts__social-item {
   margin: 0 8px;
+}
 
+.contacts__social-item img {
   &:hover,
   :focus {
     @include standard-hover;
