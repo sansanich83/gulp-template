@@ -47,39 +47,44 @@
       <h1 class="main-screen__title">Печатные платы</h1>
       <p class="main-screen__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <button aria-label="Получить бесплатную консультацию" type="button" class="main-screen__button"><span class="main-screen__button-text main-screen__button-text--desktop">Получить бесплатную
-          консультацию</span> <span class="main-screen__button-text main-screen__button-text--mobile">Бесплатная консультация</span></button>
-      <a aria-label="скрол вниз" class="main-screen__scroll" href="#">скрол вниз</a>
+          консультацию</span> <span class="main-screen__button-text main-screen__button-text--mobile">Бесплатная
+          консультация</span></button>
+      <a aria-label="скрол вниз" class="main-screen__scroll" href="#advantages">скрол вниз</a>
     </div>
   </section>
 
   <div class="middle-bg">
 
     <section class="advantages">
-      <div class="advantages__item-wrapper">
+      <a id="advantages" href="#"></a>
+      <div>
         <h2 class="advantages__header">Преимущества</h2>
-        <div class="advantages__item advantages__item--stopwatch">
-          <h3 class="advantages__title">Оперативные сроки</h3>
-          <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
-            производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-        </div>
-        <div class="advantages__item advantages__item--hired">
-          <h3 class="advantages__title">Крупные поставщики</h3>
-          <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
-            HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
-          </p>
-        </div>
-        <div class="advantages__item advantages__item--detective">
-          <h3 class="advantages__title">Полная конфиденциальность</h3>
-          <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.
-          </p>
-        </div>
-        <div class="advantages__item advantages__item--tag">
-          <h3 class="advantages__title">Персонализация стоимости</h3>
-          <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
-            цену, которая Вас
-            устраивает.
-          </p>
-        </div>
+        <ul class="advantages__item-wrapper">
+          <li class="advantages__item advantages__item--stopwatch">
+            <h3 class="advantages__title">Оперативные сроки</h3>
+            <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
+              производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="advantages__item advantages__item--hired">
+            <h3 class="advantages__title">Крупные поставщики</h3>
+            <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
+              HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--detective">
+            <h3 class="advantages__title">Полная конфиденциальность</h3>
+            <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--tag">
+            <h3 class="advantages__title">Персонализация стоимости</h3>
+            <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить
+              ту
+              цену, которая Вас
+              устраивает.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -91,7 +96,8 @@
 
       <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
         REFOND. Печатные платы
-        и комплектующие Service Devices применяются на предприятиях<span class="about__text-ellipsis"> РоссийскихЖелезных Дорог (РЖД), РоссАвтоПрома
+        и комплектующие Service Devices применяются на предприятиях<span class="about__text-ellipsis">
+          РоссийскихЖелезных Дорог (РЖД), РоссАвтоПрома
           (ВАЗ,
           АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
       </p>
@@ -103,15 +109,23 @@
   <section class="goods">
     <div class="goods__wrapper">
       <h2 class="goods__header">Service Device предлагает следующие товары и услуги </h2>
-      <a aria-label="Производство печатных плат" class="goods__item goods__item--produce" href="#">
-        <span class="goods__text">Производство печатных плат</span>
-      </a>
-      <a aria-label="Монтаж печатных плат" class="goods__item goods__item--mount" href="#">
-        <span class="goods__text">Монтаж печатных плат</span>
-      </a>
-      <a aria-label="Комплектующие для светотехники" class="goods__item goods__item--light" href="#">
-        <span class="goods__text">Комплектующие для светотехники</span>
-      </a>
+      <ul class="goods__list">
+        <li>
+          <a aria-label="Производство печатных плат" class="goods__item goods__item--produce" href="#">
+            <span class="goods__text">Производство печатных плат</span>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Монтаж печатных плат" class="goods__item goods__item--mount" href="#">
+            <span class="goods__text">Монтаж печатных плат</span>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Комплектующие для светотехники" class="goods__item goods__item--light" href="#">
+            <span class="goods__text">Комплектующие для светотехники</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -134,7 +148,7 @@
 
             <div class="feedback__form-field feedback__form-field--input">
               <input aria-label="ввод имени" type="text" placeholder="Имя">
-              <input aria-label="ввод телефона" type="number" placeholder="Телефон">
+              <input id="phone-mask" aria-label="ввод телефона" type="number" placeholder="Телефон">
             </div>
 
             <div class="feedback__form-field feedback__form-field--textarea">
@@ -146,7 +160,8 @@
               <div class="feedback__form-agreement">
                 <div class="feedback__form-agreement-checkbox">
                   <input aria-label="согласие на обработку данных" checked="" type="checkbox" id="footer-agreement">
-                  <label class="feedback__form-agreement-checkbox-label" for="footer-agreement">Я согласен на обработку персональных
+                  <label class="feedback__form-agreement-checkbox-label" for="footer-agreement">Я согласен на обработку
+                    персональных
                     данных</label>
                 </div>
               </div>
@@ -174,9 +189,9 @@
             <div class="contacts__section contacts__links-wrapper">
               <div class="contacts__title-wrapper">
                 <h3 class="contacts__title">Разделы сайта</h3>
-                <button type="button" class="contacts__section-button"><img src="./img/plus-icon.svg" width="16" height="16" alt="раскрыть разделы сайта"></button>
+                <button type="button" class="contacts__section-button contacts__section-button--closed"></button>
               </div>
-              <ul class="contacts__links">
+              <ul class="contacts__links contacts__accordion-item contacts__accordion-item--closed">
                 <li><a aria-label="ссылка на раздел О компании" class="contacts__links-item" href="#">О компании</a>
                 </li>
                 <li><a aria-label="ссылка на раздел Продукты" class="contacts__links-item" href="#">Продукты</a></li>
@@ -193,10 +208,10 @@
 
           <div class="contacts__section contacts__adress">
             <div class="contacts__title-wrapper">
-              <h3 class="contacts__title">Наш офис</h3>
-              <button type="button" class="contacts__section-button"><img src="./img/minus-icon.svg" width="16" height="2" alt="раскрыть адрес офиса"></button>
+              <h3 class="contacts__title contacts__title--office">Наш офис</h3>
+              <button type="button" class="contacts__section-button"></button>
             </div>
-            <div class="contacts__adress-list">
+            <div class="contacts__adress-list contacts__accordion-item">
               <p>г. Мытищи, Олимпийский проспект, д.10</p>
               <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
               <a aria-label="позвонить" class="contacts__adress-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
@@ -213,8 +228,8 @@
               <span class="contacts__logo-copyright contacts__logo-copyright--tablet">1999-2018 SD Service
                 Devices</span>
             </div>
-            <span class="contacts__copyright-text contacts__copyright-text--terms">Условия конфеденциальности</span>
-            <span class="contacts__copyright-text contacts__copyright-text--right">Developed by wow studio</span>
+            <a class="contacts__copyright-text contacts__copyright-text--terms" href="#">Условия конфеденциальности</a>
+            <a class="contacts__copyright-text contacts__copyright-text--right" href="#">Developed by wow studio</a>
           </div>
         </div>
 
@@ -257,6 +272,7 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/imask"></script>
   <script src="./js/main.js"></script>
 
 </body>

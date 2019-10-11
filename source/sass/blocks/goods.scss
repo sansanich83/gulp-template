@@ -18,6 +18,12 @@
   padding-right: 25px;
 }
 
+.goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .goods__item {
   background-repeat: no-repeat;
   background-position-x: right, center;

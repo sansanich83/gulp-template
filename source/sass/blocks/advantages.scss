@@ -29,7 +29,8 @@
   margin: 0;
 }
 
-.advantages__item:hover .advantages__title {
+.advantages__item:hover .advantages__title,
+.advantages__item:hover .advantages__text {
   color: white;
 }
 
