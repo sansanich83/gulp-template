@@ -181,6 +181,13 @@
   background-size: 9px 9px;
 }
 
+@media (max-width: 1400px) {
+  .feedback {
+    background-position-x: -70px;
+    background-position-y: 40px;
+  }
+}
+
 @media (max-width: 1023px) {
   .feedback {
     background-image: none;

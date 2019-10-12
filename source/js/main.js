@@ -73,11 +73,26 @@ var i;
 for (i = 0; i < accordeonBtns.length; i++) {
 
   accordeonBtns[i].addEventListener('click', function () {
-    // if (!(this.classList.contains('contacts__section-button--closed'))) {
-    //   this.classList.add('contacts__section-button--closed');
-    // }
-    this.classList.toggle('contacts__section-button--closed');
-    this.parentElement.nextElementSibling.classList.toggle('contacts__accordion-item--closed');
-
+    if ((this.classList.contains('contacts__section-button--closed'))) {
+      for (i = 0; i < accordeonBtns.length; i++) {
+        accordeonBtns[i].classList.add('contacts__section-button--closed');
+        accordeonBtns[i].parentElement.nextElementSibling.classList.add('contacts__accordion-item--closed');
+      }
+      this.classList.toggle('contacts__section-button--closed');
+      this.parentElement.nextElementSibling.classList.toggle('contacts__accordion-item--closed');
+    } else {
+      this.classList.toggle('contacts__section-button--closed');
+      this.parentElement.nextElementSibling.classList.toggle('contacts__accordion-item--closed');
+    }
   });
 }
+
+var element = document.getElementById('phone-mask');
+var popupPhone = document.getElementById('popup-phone');
+var maskOptions = {
+  mask: '+7(000)000-00-00',
+  lazy: false
+};
+
+var mask = new IMask(element, maskOptions);
+var mask = new IMask(popupPhone, maskOptions);

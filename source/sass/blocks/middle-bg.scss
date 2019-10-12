@@ -1,8 +1,20 @@
-@media (min-width: 750px) {
+.middle-bg {
+  background-image: url("../img/middle-bg-desktop.svg");
+  background-position-y: -130px;
+  background-color: #ffffff;
+  margin-top: -40px;
+  padding-top: 40px;
+  margin-bottom: -55px;
+  padding-bottom: 55px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
   .middle-bg {
-    background-image: url("../img/middle-bg-desktop.svg");
-    background-position-y: -130px;
-    background-color: transparent;
-    background-size: cover;
+    background-image: url("../img/middle-bg-tablet.svg");
+    background-size: 116%;
+    background-position-y: 118px;
+    background-position-x: 182px;
   }
 }

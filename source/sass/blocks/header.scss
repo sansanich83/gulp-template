@@ -22,7 +22,7 @@
 
 .header__logotype img:hover,
 .header__logotype img:focus {
-  @include standard-hover;
+  opacity: 0.5;
 }
 
 .header__nav-menu-span {
@@ -47,7 +47,7 @@
 
   &:hover,
   :focus {
-    @include standard-hover;
+    opacity: 0.5;
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -108,7 +108,7 @@
 
   &:hover,
   :focus {
-    @include standard-hover;
+    opacity: 0.5;
   }
 }
 
