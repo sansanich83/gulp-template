@@ -40,6 +40,7 @@
   font-style: normal;
   font-weight: normal;
   margin-bottom: 9px;
+  margin-left: -6px;
 }
 
 .feedback__ask br {
@@ -81,8 +82,9 @@
   width: 270px;
 
   &:hover,
-  :focus {
+  &:focus {
     @include light-hover;
+    transition: 0.3s;
   }
 }
 
@@ -101,6 +103,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  color: white;
 
   &::-moz-placeholder {
     color: white;
@@ -111,11 +114,12 @@
   }
 
   &:hover,
-  :focus {
+  &:focus {
     outline-color: #ffffff;
     outline-offset: -2px;
     outline-style: auto;
     outline-width: 5px;
+    transition: 0.3s;
   }
 }
 
@@ -163,7 +167,7 @@
   }
 
   &:hover,
-  :focus {
+  &:focus {
     text-decoration: underline;
     cursor: pointer;
   }
@@ -211,7 +215,9 @@
     font-size: 32px;
     line-height: 140.62%;
     margin-top: 0;
-    padding-top: 86px;
+    margin-bottom: 16px;
+    padding-top: 82px;
+    margin-left: 2px;
   }
 
   .feedback__form-field--textarea textarea {
@@ -222,6 +228,10 @@
   .feedback__form-agreement-checkbox-label {
     margin-top: 5px;
     margin-right: 9px;
+  }
+
+  .feedback__form-button {
+    width: 282px;
   }
 }
 

@@ -24,8 +24,8 @@
   justify-content: flex-start;
   max-width: 1213px;
   margin: 0 auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .goods__list li {
@@ -119,8 +119,8 @@
 }
 
 .goods__text {
-  margin-left: 43px;
-  margin-top: 53px;
+  margin-left: 49px;
+  margin-top: 48px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -136,19 +136,19 @@
   font-size: 36px;
   line-height: 51px;
   margin-top: 37px;
-  margin-bottom: 19px;
+  margin-bottom: -6px;
   margin-left: 0;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   padding-top: 51px;
-  padding-left: 40px;
+  padding-left: 25px;
   padding-right: 15px;
 }
 
 @media (max-width: 1023px) {
   .goods {
-    padding-bottom: 83px;
+    padding-bottom: 88px;
   }
 
   .goods__header {
@@ -164,8 +164,13 @@
     padding: 0;
   }
 
+  .goods__list {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   .goods__item {
-    width: 94%;
+    width: 99%;
     color: white;
     display: block;
     box-sizing: border-box;

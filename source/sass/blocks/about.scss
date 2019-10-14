@@ -25,18 +25,17 @@
     width: 198px;
     height: 325px;
     background-image: url("../img/2005@1x.webp");
+    background-size: contain;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       background-image: url("../img/2005@1x.png");
     }
 
     background-color: transparent;
-    background-size: contain;
     background-repeat: no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/2005@2x.webp");
-      background-size: 170px 325px;
     }
   }
 }
@@ -83,9 +82,10 @@
   box-sizing: border-box;
 
   &:hover,
-  :focus {
+  &:focus {
     color: #ffffff;
     background-color: #00b2ff;
+    transition: 0.3s;
   }
 }
 
@@ -148,6 +148,7 @@
   .about {
     margin: 11px;
     min-height: auto;
+    padding-bottom: 0;
   }
 
   .about h2 {

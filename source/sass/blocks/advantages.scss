@@ -37,6 +37,8 @@
 .advantages__item:hover {
   background-color: #00b2ff;
   color: white;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .advantages__item-wrapper {

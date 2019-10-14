@@ -18,6 +18,8 @@
   background-repeat: no-repeat;
   width: 100%;
   color: #ffffff;
+  padding-left: 20px;
+  box-sizing: border-box;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image:
@@ -29,10 +31,11 @@
 
 .main-screen__container {
   width: 100%;
-  max-width: 1411px;
+  max-width: 1437px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-left: 0;
   box-sizing: border-box;
 }
 
@@ -48,9 +51,9 @@
   width: 718px;
   padding-top: 212px;
   margin-top: 102px;
-  margin-bottom: 12px;
-  padding-left: 25px;
-  margin-left: -25px;
+  margin-bottom: 6px;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .main-screen__slogan {
@@ -62,8 +65,8 @@
   width: 683px;
   margin-bottom: 44px;
   color: #ffffff;
-  margin-left: 70px;
-  padding-left: 25px;
+  margin-left: 94px;
+  padding-left: 0;
 
   &::before {
     width: 63px;
@@ -87,16 +90,21 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   width: 409px;
-  margin-left: 93px;
+  margin-left: 95px;
   color: white;
   background-color: #00b2ff;
   border: none;
   border-radius: 4px;
   min-height: 55px;
+  outline: none;
 
   &:hover,
-  :focus {
-    @include light-hover;
+  &:focus {
+    background-color: transparent;
+    border: 1px solid #00b2ff;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
   }
 }
 
@@ -108,20 +116,21 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 120px;
-  margin-left: -40px;
+  margin-top: 131px;
+  margin-left: -37px;
   transform: rotate(-90deg);
   width: 93px;
   height: 16px;
   opacity: 0.5;
+  outline: none;
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     margin-top: 70px;
   }
 
   &:hover,
-  :focus {
-    @include standard-hover;
+  &:focus {
+    opacity: 0.8;
   }
 }
 
@@ -141,7 +150,7 @@
         url("../img/main-bg-tablet@1x.png");
     }
 
-    background-position-x: 66vw, -372px;
+    background-position-x: 66vw, -364px;
     background-position-y: 127px, 0;
     background-color: #1b2931;
     background-size: auto, cover;
@@ -185,7 +194,7 @@
     margin-top: 0;
     width: 379px;
     min-height: 55px;
-    margin-left: 139px;
+    margin-left: 120px;
   }
 
   .main-screen__button-text--desktop {
@@ -243,7 +252,7 @@
   }
 
   .main-screen__slogan {
-    width: 70%;
+    width: 80%;
     font-family: $secondary-font;
     font-style: normal;
     font-weight: normal;
@@ -262,7 +271,7 @@
 
   .main-screen__button {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 3%;
     font-family: $main-font;
     font-weight: bold;
     font-size: 16px;

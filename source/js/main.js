@@ -3,12 +3,14 @@ var popupCallback = document.querySelector('.feedback--popup');
 var openPopupButton = document.querySelector('.header__callback');
 var bodyHolder = document.querySelector('body');
 var closePopupButton = document.querySelector('.feedback__close-button');
+var inputName = document.querySelector('#name');
 
 
-if (openPopupButton && popupCallback && bodyHolder) {
+if (openPopupButton && popupCallback && bodyHolder && inputName) {
   openPopupButton.addEventListener('click', function () {
     popupCallback.classList.add('feedback--popup--show');
     bodyHolder.classList.add('feedback--popup--show');
+    inputName.focus();
   });
 }
 
@@ -34,7 +36,7 @@ document.addEventListener('keydown', function (evt) {
 });
 
 // собираем все якоря; устанавливаем время анимации и количество кадров
-var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
+var anchors = [].slice.call(document.querySelectorAll('.anchors'));
 var animationTime = 300;
 var framesCount = 20;
 

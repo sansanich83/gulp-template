@@ -18,16 +18,18 @@
   width: 490px;
   height: 605px;
   position: absolute;
-  top: 50vh;
+  top: 135px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background: #00b2ff;
   padding-left: 35px;
   z-index: 200;
 }
 
 .feedback__ask-text--popup {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  margin-left: 5px;
+  margin-top: 13px;
 }
 
 .feedback__ask-wrapper--popup {
@@ -36,7 +38,7 @@
 }
 
 .feedback__ask-header--popup {
-  margin-top: 15px;
+  margin-top: 17px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -44,6 +46,7 @@
   line-height: 140.62%;
   color: #ffffff;
   padding-top: 13px;
+  margin-left: 4px;
 }
 
 .feedback__form-field--popup-input {
@@ -55,6 +58,7 @@
   margin-top: 15px;
   margin-bottom: 15px;
   width: 426px;
+  padding-left: 24px;
 }
 
 .feedback__form-field--popup-textarea textarea {
@@ -62,6 +66,8 @@
   margin-top: 16px;
   margin-right: 25px;
   width: 426px;
+  margin-bottom: 30px;
+  padding-left: 24px;
 }
 
 .feedback__form-buttons--popup {
@@ -74,11 +80,12 @@
 }
 
 .feedback__form-button--popup {
-  width: 94%;
+  width: 92%;
+  margin-bottom: 49px;
 }
 
 .feedback__form-agreement-checkbox-label--popup {
-  width: 85%;
+  width: 75%;
   margin-left: 51px;
   margin-top: -20px;
 
@@ -109,10 +116,15 @@
 
   &:hover,
   :focus {
-    outline-color: #ffffff;
-    outline-offset: -2px;
-    outline-style: auto;
-    outline-width: 5px;
+    opacity: 0.6;
     cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+@media (max-height: 870px) {
+  .feedback__ask--popup {
+    top: 50vh;
+    transform: translate(-50%, -50%);
   }
 }
