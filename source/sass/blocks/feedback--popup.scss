@@ -6,6 +6,7 @@
   left: 0;
   top: 0;
   display: none;
+  background-image: none;
 }
 
 .feedback--popup--show {
@@ -30,6 +31,7 @@
   margin-bottom: 18px;
   margin-left: 5px;
   margin-top: 13px;
+  width: 87%;
 }
 
 .feedback__ask-wrapper--popup {
@@ -57,7 +59,7 @@
 .feedback__form-field--popup-input input {
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 426px;
+  width: 418px;
   padding-left: 24px;
 }
 
@@ -65,7 +67,7 @@
   height: 100px;
   margin-top: 16px;
   margin-right: 25px;
-  width: 426px;
+  width: 418px;
   margin-bottom: 30px;
   padding-left: 24px;
 }

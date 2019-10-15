@@ -96,5 +96,14 @@ var maskOptions = {
   lazy: false
 };
 
-var mask = new IMask(element, maskOptions);
-var mask = new IMask(popupPhone, maskOptions);
+if (popupPhone) {
+  popupPhone.addEventListener('click', function () {
+    var mask = new IMask(popupPhone, maskOptions);
+  });
+}
+
+if (element) {
+  element.addEventListener('click', function () {
+    var mask = new IMask(element, maskOptions);
+  });
+}
